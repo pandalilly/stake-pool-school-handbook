@@ -37,9 +37,7 @@ cardano-cli shelley node key-gen \
 --operational-certificate-issue-counter-file cold.counter
 ```
 
-![\`cardano-cli\` command hierarchy](https://github.com/cardano-foundation/stake-pool-school-handbook/tree/3abbeae984eb17aab3778e922956e72ae1cd702a/.gitbook/assets/cli.png)
-
-
+![](../../.gitbook/assets/cli.png)
 
 {% hint style="info" %}
 [QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)
