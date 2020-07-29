@@ -69,7 +69,7 @@ We then restart the node as explained above.
 
 On our local machine, we can go to `127.0.0.1:12788` in our browser and see the EKG monitoring information.
 
-![EKG in the browser.](https://github.com/cardano-foundation/stake-pool-school-handbook/tree/3abbeae984eb17aab3778e922956e72ae1cd702a/.gitbook/assets/ekg.png)
+![](../../.gitbook/assets/ekg%20%281%29.png)
 
 
 
