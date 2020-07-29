@@ -17,7 +17,7 @@ cd relay
 {% hint style="info" %}
 You can download the configuration files from:
 
- [https://hydra.iohk.io/job/Cardano/cardano-node/cardano-deployment/latest-finished/download/1/index.html](https://hydra.iohk.io/job/Cardano/cardano-node/cardano-deployment/latest-finished/download/1/index.html)
+[https://hydra.iohk.io/job/Cardano/cardano-node/cardano-deployment/latest-finished/download/1/index.html](https://hydra.iohk.io/job/Cardano/cardano-node/cardano-deployment/latest-finished/download/1/index.html)
 {% endhint %}
 
 Or with the command line using:
@@ -28,3 +28,12 @@ wget https://hydra.iohk.io/job/Cardano/cardano-node/cardano-deployment/latest-fi
 wget https://hydra.iohk.io/job/Cardano/cardano-node/cardano-deployment/latest-finished/download/1/testnet-byron-genesis.json
 wget https://hydra.iohk.io/job/Cardano/cardano-node/cardano-deployment/latest-finished/download/1/testnet-topology.json
 ```
+
+
+
+{% hint style="info" %}
+[QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)
+
+If you have any questions or need help, please raise an issue in [Github.](https://github.com/cardano-foundation/stake-pool-school-handbook/issues) We will respond as soon as possible.
+{% endhint %}
+

@@ -20,7 +20,7 @@
 **WARNING:** For Mainnet, you may want to use your **local machine** for this process \(assuming you have cardano-node and cardano-cli on it\). Make sure you are not online until you have put your **cold keys** in a secure storage and deleted the files from you local machine.
 {% endhint %}
 
-The **core node**  needs:
+The **core node** needs:
 
 * **Cold** key pair,
 * **VRF** Key pair,
@@ -92,7 +92,7 @@ expr 656260 / 3600
 ```
 
 {% hint style="info" %}
-**NOTE:** `slotNo` and `Kes-period` will be different when you run this commands. So make sure to calculate them yourself. 
+**NOTE:** `slotNo` and `Kes-period` will be different when you run this commands. So make sure to calculate them yourself.
 {% endhint %}
 
 To generate the certificate:
@@ -110,7 +110,7 @@ cardano-cli shelley node issue-op-cert \
 
 The best place for your cold keys is a **SECURE USB** or other **SECURE EXTERNAL DEVICE**, not a computer with internet access.
 
-### Copy the cold keys from your server to your local machine and from there to COLD storage. 
+### Copy the cold keys from your server to your local machine and from there to COLD storage.
 
 For example:
 
@@ -123,4 +123,14 @@ debug1: Exit status 0
 ```
 
 Later on we will learn how to register our pool in the blockchain.
+
+
+
+
+
+{% hint style="info" %}
+[QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)
+
+If you have any questions or need help, please raise an issue in [Github.](https://github.com/cardano-foundation/stake-pool-school-handbook/issues) We will respond as soon as possible.
+{% endhint %}
 

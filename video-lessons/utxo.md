@@ -8,9 +8,15 @@ description: >-
 
 In this lesson Lars explains the UTxO model. It is important that we have a good understanding of the model so that it is easier to understand how to create transactions.
 
-### The UTxO model
+## The UTxO model
 
-{% embed url="https://youtu.be/Eq4gS2mXhKk" %}
+{% embed url="https://youtu.be/Eq4gS2mXhKk" caption="" %}
 
 
+
+{% hint style="info" %}
+[QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)
+
+If you have any questions or need help, please raise an issue in [Github.](https://github.com/cardano-foundation/stake-pool-school-handbook/issues) We will respond as soon as possible.
+{% endhint %}
 

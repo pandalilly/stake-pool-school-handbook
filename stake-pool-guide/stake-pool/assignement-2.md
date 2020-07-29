@@ -13,13 +13,11 @@ description: >-
 4. Install GHC 
 5. Install libsodium 
 6. Create the directory .local/bin and add it to the PATH 
-7.  Build the node from source in your new server or Virtual Machine. 
+7. Build the node from source in your new server or Virtual Machine. 
 
 {% hint style="info" %}
-It is important to make sure that your core and relay nodes run the exact same version of the node. So make sure to update both whenever you have to update to a newer version of the cardano-node. 
+It is important to make sure that your core and relay nodes run the exact same version of the node. So make sure to update both whenever you have to update to a newer version of the cardano-node.
 {% endhint %}
 
-5. DO NOT START YOUR CORE NODE YET. When you have completed tasks 1-4, continue to [KES-Periods](kes_period.md)
-
-
+1. DO NOT START YOUR CORE NODE YET. When you have completed tasks 1-4, continue to [KES-Periods](kes_period.md)
 

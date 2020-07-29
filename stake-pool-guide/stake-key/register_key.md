@@ -23,7 +23,7 @@ Once the certificate has been created, we must include it in a transaction to po
 
 As before, to create the transaction you need to determine the TTL querying the tip and adding some slots to give you sufficient time to build the transaction.
 
-## Draft transaction 
+## Draft transaction
 
 ```text
 cardano-cli shelley transaction build-raw \
@@ -74,7 +74,7 @@ Query the UTXO:
     > b64ae44e1195b04663ab863b62337e626c65b0c9855a9fbb9ef4458f81a6f5ee     1      1000000000
 ```
 
-So if we had 1000 ada, to calculate the change to send back to `payment.addr` we run: 
+So if we had 1000 ada, to calculate the change to send back to `payment.addr` we run:
 
 ```text
 expr 1000000000 - 171485 - 400000
@@ -116,4 +116,12 @@ cardano-cli shelley transaction submit \
 ```
 
 Your stake key is now registered in the blockchain.
+
+
+
+{% hint style="info" %}
+[QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)
+
+If you have any questions or need help, please raise an issue in [Github.](https://github.com/cardano-foundation/stake-pool-school-handbook/issues) We will respond as soon as possible.
+{% endhint %}
 

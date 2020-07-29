@@ -7,8 +7,6 @@ description: >-
 
 # Questions, feedback & help
 
-
-
 {% hint style="info" %}
 [QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)
 

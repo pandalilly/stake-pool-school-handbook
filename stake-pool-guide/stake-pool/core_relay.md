@@ -2,11 +2,11 @@
 
 Before we register our stake pool, let's configure our **block-producing** and **relay** nodes:
 
-**NOTE:** Here you can find peers to connect to, and submit your own relay's data:   
+**NOTE:** Here you can find peers to connect to, and submit your own relay's data:  
 [https://github.com/input-output-hk/cardano-ops/blob/batch-ff-relays-pr/topologies/ff-peers.nix](https://github.com/input-output-hk/cardano-ops/blob/batch-ff-relays-pr/topologies/ff-peers.nix)
 
 {% hint style="info" %}
-Please note that some of these nodes might have been retired already. 
+Please note that some of these nodes might have been retired already.
 {% endhint %}
 
 ## Configure the block-producing node
@@ -22,7 +22,7 @@ wget https://hydra.iohk.io/job/Cardano/cardano-node/cardano-deployment/latest-fi
 wget https://hydra.iohk.io/job/Cardano/cardano-node/cardano-deployment/latest-finished/download/1/shelley_testnet-topology.json
 ```
 
-Make the core node to "talk" only to **YOUR** relay node. 
+Make the core node to "talk" only to **YOUR** relay node.
 
 ```text
 nano shelley_testnet-topology.json
@@ -65,4 +65,12 @@ nano shelley_testnet-topology.json
   ]
 }
 ```
+
+
+
+{% hint style="info" %}
+[QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)
+
+If you have any questions or need help, please raise an issue in [Github.](https://github.com/cardano-foundation/stake-pool-school-handbook/issues) We will respond as soon as possible.
+{% endhint %}
 

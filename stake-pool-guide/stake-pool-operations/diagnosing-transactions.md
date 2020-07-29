@@ -4,7 +4,7 @@ If you experience any problems while setting up your network, we are here to hel
 
 **Problem**: Failed reading: Your input is either malformed or not hex encoded:
 
-\`\`\`$ cardano-cli shelley transaction build-raw  --tx-in f5296e996940b1c81f781594293d423b4250a454f5832b0740a923f74460d34\#1  --tx-out $\(cat payment2.addr\)+100000000  --tx-out $\(cat payment.addr\)+899832033  --ttl 335000 --fee 167965  --out-file tx001.raw
+\`\`\`$ cardano-cli shelley transaction build-raw --tx-in f5296e996940b1c81f781594293d423b4250a454f5832b0740a923f74460d34\#1 --tx-out $\(cat payment2.addr\)+100000000 --tx-out $\(cat payment.addr\)+899832033 --ttl 335000 --fee 167965 --out-file tx001.raw
 
 ```text
 ```> option --tx-in: Failed reading: Your input is either 
@@ -16,7 +16,7 @@ f5296e996940b1c81f781594293d423b4250a454f5832b0740a923f74460d34
 
 **Solution**: Make sure that you are using a correct UTXO. You can query this with:
 
-\`\`\`$ cardano-cli shelley query utxo  --address $\(cat payment.addr\)  --testnet-magic 42
+\`\`\`$ cardano-cli shelley query utxo --address $\(cat payment.addr\) --testnet-magic 42
 
 ```text
 **Problem**: ExpiredUTxO
@@ -75,4 +75,12 @@ Build a new transaction with a TTL (time to live) higher than Current Slot. As a
 \`\`\`
 
 We encourage you to share your ideas and suggestions on our [dedicated support page](https://iohk.zendesk.com/hc/en-us/categories/900000102203-Shelley-Testnet) so that we can create a library of solutions and support for the tasks that you need to perform.
+
+
+
+{% hint style="info" %}
+[QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)
+
+If you have any questions or need help, please raise an issue in [Github.](https://github.com/cardano-foundation/stake-pool-school-handbook/issues) We will respond as soon as possible.
+{% endhint %}
 

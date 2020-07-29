@@ -1,15 +1,12 @@
 # Ouroboros protocol
 
-Read the original Ouroboros papers: 
+Read the original Ouroboros papers:
 
-  
 [OUROBOROS](https://eprint.iacr.org/2016/889.pdf)
 
 [OUROBOROS PRAOS](https://eprint.iacr.org/2017/573.pdf)
 
 [OUROBOROS GENESIS](https://eprint.iacr.org/2018/378.pdf)
-
-
 
 And a video explanation for non PhD's:
 

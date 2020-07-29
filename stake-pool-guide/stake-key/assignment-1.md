@@ -6,5 +6,3 @@ Create a transaction to send all funds from payment.addr to paymentwithstake.add
 Create a transaction with only **one** input and **one** output sending all the funds to paymentwithstake.addr
 {% endhint %}
 
-
-

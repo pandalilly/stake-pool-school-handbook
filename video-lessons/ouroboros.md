@@ -76,19 +76,16 @@ At the same time, when the aggregate stake of a stake pool grows beyond a certai
 
 All these functionalities make Ouroboros the best proof of stake ledger protocol to date. And its only implementation is currently in the Cardano blockchain.
 
-![Ouroboros protocol](../.gitbook/assets/ouroborosprotocol-blueprint-vertical.jpg)
+![Ouroboros protocol](https://github.com/cardano-foundation/stake-pool-school-handbook/tree/3abbeae984eb17aab3778e922956e72ae1cd702a/.gitbook/assets/ouroborosprotocol-blueprint-vertical.jpg)
 
 ## How it works <a id="9621"></a>
 
 1. **Time** is divided into epochs and slots and begins at Genesis. At most one block is produced in every slot. Only the slot leader can sign a block for a particular slot.
-
 2. **Register:** The first thing a user needs to do to participate in the protocol is registering to:
-
-* the network, to synchronize with the ledger;
-* global clock, that indicates the current slot;
-* a global random oracle that produces random values \(v\) and delivers them to the user.
-
-3. **Staking procedure**
+3. the network, to synchronize with the ledger;
+4. global clock, that indicates the current slot;
+5. a global random oracle that produces random values \(v\) and delivers them to the user.
+6. **Staking procedure**
 
 3.1 At the beginning of every epoch, the online stakeholders fetch \(from the blockchain\) the **stake distribution** from the last block of 2 epochs ago. For example, if the current epoch is epoch 100, the stake distribution used is the distribution as it was in the last block of epoch 98.
 
@@ -96,17 +93,14 @@ All these functionalities make Ouroboros the best proof of stake ledger protocol
 
 3.3 Stakeholders evaluate with their **secret key** the **Verifiable Random Function \(VRF\)** at every slot. If the output value \(v\) is below a certain threshold, the party becomes slot leader for that block.
 
-4. **Certificate:** The **VRF** produces two outputs: **a random value \(v\)** and a **proof \(π\)** that the slot leader will include in the block he produces to certify that he is the legitimate slot leader for that particular slot.
-
-5. Slot leader performs the following duties
-
-* Collects the transactions to be included in his block.
-* Includes in his block the random value \(v\) and proof \(π\) obtained from the VRF output.
-* Before broadcasting the block, the slot leader generates a new secret key **\(Key-evolving signature\)**. The public key remains the same, but the secret key is updated in every step and the old key is erased.
-* It is impossible to forge old signatures with new keys. And it is also impossible to derive previous keys from new ones.
-* Finally, the slot leader broadcast the new block to the network.
-
-6. The **rewards** obtained by the slot leaders are calculated at the end of the epoch. Rewards come from transaction fees and funds from the ADA reserve.
+1. **Certificate:** The **VRF** produces two outputs: **a random value \(v\)** and a **proof \(π\)** that the slot leader will include in the block he produces to certify that he is the legitimate slot leader for that particular slot.
+2. Slot leader performs the following duties
+3. Collects the transactions to be included in his block.
+4. Includes in his block the random value \(v\) and proof \(π\) obtained from the VRF output.
+5. Before broadcasting the block, the slot leader generates a new secret key **\(Key-evolving signature\)**. The public key remains the same, but the secret key is updated in every step and the old key is erased.
+6. It is impossible to forge old signatures with new keys. And it is also impossible to derive previous keys from new ones.
+7. Finally, the slot leader broadcast the new block to the network.
+8. The **rewards** obtained by the slot leaders are calculated at the end of the epoch. Rewards come from transaction fees and funds from the ADA reserve.
 
 **What happens in the case of a fork in the chain?**
 

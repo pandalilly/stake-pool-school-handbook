@@ -1,10 +1,8 @@
 # Syllabus
 
-### 
+## What you will learn:
 
-### What you will learn:
-
-{% embed url="https://youtu.be/Jb08HTkk7yo" %}
+{% embed url="https://youtu.be/Jb08HTkk7yo" caption="" %}
 
 \*\*\*\*
 

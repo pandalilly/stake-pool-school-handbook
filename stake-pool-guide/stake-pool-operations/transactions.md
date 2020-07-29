@@ -30,7 +30,7 @@ Creating a transaction is a process that requires various steps:
 * Sign the transaction
 * Submit the transaction
 
-### Get protocol parameters
+## Get protocol parameters
 
 Get the protocol parameters and save them to `protocol.json` with:
 
@@ -40,7 +40,7 @@ Get the protocol parameters and save them to `protocol.json` with:
    --out-file protocol.json
 ```
 
-### Determine the TTL \(time to Live\) for the transaction
+## Determine the TTL \(time to Live\) for the transaction
 
 We need the CURRENT TIP of the blockchain, this is, the height of the last block produced. We are looking for the value of `unSlotNo`
 
@@ -60,7 +60,7 @@ To build the transaction we need to specify the **TTL \(Time to live\)**, this i
 
 From `protocol.json` we know that we have 1 slot per second. Lets say that it will take us 10 minutes to build the transaction, and that we want to give it another 10 minutes window to be included in a block. So we need 20 minutes or 1200 slots. So we add 1200 to the current tip: 795346 + 1200 = 796546. So our TTL is 796546
 
-### Draft the transaction
+## Draft the transaction
 
 We create a draft for the transaction and save it in tx.raw
 
@@ -76,9 +76,9 @@ cardano-cli shelley transaction build-raw \
 --out-file tx.raw
 ```
 
-### Calculate the fee
+## Calculate the fee
 
-The transaction needs one \(1\) input: a valid UTXO from `payment.addr`, and two \(2\) outputs: The receiving address **payment2.addr** and an address to send the change back, in this case we use **payment.addr.**  You also need to include the **Draft transaction file. Witnesses** are ****number of signing keys used to sign the transaction.
+The transaction needs one \(1\) input: a valid UTXO from `payment.addr`, and two \(2\) outputs: The receiving address **payment2.addr** and an address to send the change back, in this case we use **payment.addr.** You also need to include the **Draft transaction file. Witnesses** are _\*\*_number of signing keys used to sign the transaction.
 
 ```text
    cardano-cli shelley transaction calculate-min-fee \
@@ -89,8 +89,8 @@ The transaction needs one \(1\) input: a valid UTXO from `payment.addr`, and two
    --byron-witness-count 0 \
    --testnet-magic 42 \
    --protocol-params-file protocol.json
-    
-   
+
+
    > 167965
 ```
 
@@ -118,7 +118,7 @@ cardano-cli shelley query utxo \
 > 4e3a6e7fdcb0d0efa17bf79c13aed2b4cb9baf37fb1aa2e39553d5bd720c5c99     4     1000000000000
 ```
 
-### Build the transaction
+## Build the transaction
 
 We write the transaction in a file, we will name it `tx.raw`.
 
@@ -134,7 +134,7 @@ cardano-cli shelley transaction build-raw \
 --out-file tx.raw
 ```
 
-### Sign the transaction
+## Sign the transaction
 
 Sign the transaction with the signing key **payment.skey** and save the signed transaction in **tx.signed**
 
@@ -146,7 +146,7 @@ cardano-cli shelley transaction sign \
 --out-file tx.signed
 ```
 
-### Submit the transaction
+## Submit the transaction
 
 Make sure that your node is running and set CARDANO\_NODE\_SOCKET\_PATH variable to:
 
@@ -162,7 +162,7 @@ cardano-cli shelley transaction submit \
         --testnet-magic 42
 ```
 
-### Check the balances
+## Check the balances
 
 We must give it some time to get incorporated into the blockchain, but eventually, we will see the effect:
 
@@ -183,4 +183,12 @@ We must give it some time to get incorporated into the blockchain, but eventuall
     > ----------------------------------------------------------------------------------------
     > b64ae44e1195b04663ab863b62337e626c65b0c9855a9fbb9ef4458f81a6f5ee     0         100000000
 ```
+
+
+
+{% hint style="info" %}
+[QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)
+
+If you have any questions or need help, please raise an issue in [Github.](https://github.com/cardano-foundation/stake-pool-school-handbook/issues) We will respond as soon as possible.
+{% endhint %}
 

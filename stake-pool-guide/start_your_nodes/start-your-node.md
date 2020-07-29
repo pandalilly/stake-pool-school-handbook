@@ -1,7 +1,5 @@
 # Start your node
 
-
-
 Starting the the node uses the command `cardano-node run` and a set of options.
 
 You can get the complete list of available options with `cardano-node run`
@@ -20,7 +18,7 @@ You can get the complete list of available options with `cardano-node run`
 -h,--help                       Show this help text
 ```
 
-To start the node, run the following command from inside the relay directory: 
+To start the node, run the following command from inside the relay directory:
 
 ```text
  cardano-node run \
@@ -33,16 +31,16 @@ To start the node, run the following command from inside the relay directory:
 ```
 
 {% hint style="info" %}
-Replace x.x.x.x with your public IP 
+Replace x.x.x.x with your public IP
 {% endhint %}
 
-Create the environment variable CARDANO\_NODE\_SOCKET\_PATH 
+Create the environment variable CARDANO\_NODE\_SOCKET\_PATH
 
 ```text
 export CARDANO_NODE_SOCKET_PATH=~/relay/db/node.socket
 ```
 
-Check whether the node is syncing by fetching the current tip,  a couple of times, `slotNo` should be increasing. `--testnet-magic 42` identifies the Shelley testnet
+Check whether the node is syncing by fetching the current tip, a couple of times, `slotNo` should be increasing. `--testnet-magic 42` identifies the Shelley testnet
 
 ```text
 cardano-cli shelley query tip --testnet-magic 42
@@ -63,4 +61,12 @@ cardano-cli shelley query tip --testnet-magic 42
     "slotNo": 371358
 }
 ```
+
+
+
+{% hint style="info" %}
+[QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)
+
+If you have any questions or need help, please raise an issue in [Github.](https://github.com/cardano-foundation/stake-pool-school-handbook/issues) We will respond as soon as possible.
+{% endhint %}
 

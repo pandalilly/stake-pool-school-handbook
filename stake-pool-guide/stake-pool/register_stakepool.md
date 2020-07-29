@@ -51,7 +51,7 @@ Registering your stake pool requires:
 
 Store the file in a url you control, for example [https://gist.githubusercontent.com/testPool/.../testPool.json](https://github.com/carloslodelar/SPO/tree/baec64ba9efba39d4b60b7824fb4d7b962f2c3e7/stake-pool-operations/shorturl.at/gDV47/README.md)
 
-You can use a GIST in github, just make sure that the URL is less than 65 characters long. 
+You can use a GIST in github, just make sure that the URL is less than 65 characters long.
 
 ## Get the hash of your file:
 
@@ -113,7 +113,7 @@ cbor-hex:
 48aa7b2c8deb8f6d2318e3bf3df885e22d5d63788153e7f4040c33ecae15d3e61b0000005d21dba0
 001b000000012a05f200d81e820001820058203a4e813b6340dc790f772b3d433ce1c371d5c5f5de
 46f1a68bdf8113f50e779d8158203a4e813b6340dc790f772b3d433ce1c371d5c5f5de46f1a68bdf
-8113f50e779d80f6   
+8113f50e779d80f6
 ```
 
 ## Generate delegation certificate \(pledge\)
@@ -161,7 +161,7 @@ cardano-cli shelley transaction calculate-min-fee \
 > 184685
 ```
 
-We have to pay a deposit for the stake pool registration. The deposit amount is specified in the genesis file and in `protocol.json` 
+We have to pay a deposit for the stake pool registration. The deposit amount is specified in the genesis file and in `protocol.json`
 
 ```text
 "poolDeposit": 500000000
@@ -196,7 +196,7 @@ cardano-cli shelley transaction build-raw \
 --fee 184685 \
 --certificate-file pool-registration.cert \
 --certificate-file delegation.cert \
---out-file tx.raw 
+--out-file tx.raw
 ```
 
 Sign it:
@@ -235,8 +235,16 @@ or
 
 ```text
 cardano-cli shelley query ledger-state --testnet-magic 42 \
-| jq '._delegationState._pstate._pParams.<poolid>' 
+| jq '._delegationState._pstate._pParams.<poolid>'
 ```
 
 which should return a non-empty string if your poolID is located in the ledger. You can then then head over to a pool listing website such as [https://ff.pooltool.io/](https://ff.pooltool.io/) and \(providing it is up and running and showing a list of registered stake pools\) you should hopefully be able to find your pool in there by searching using your poolID, and subsequently claiming it \(might require registration on the website\) and giving it a customized name.
+
+
+
+{% hint style="info" %}
+[QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)
+
+If you have any questions or need help, please raise an issue in [Github.](https://github.com/cardano-foundation/stake-pool-school-handbook/issues) We will respond as soon as possible.
+{% endhint %}
 

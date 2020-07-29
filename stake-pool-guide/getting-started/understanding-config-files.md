@@ -253,7 +253,7 @@ The node can run in either the `SimpleView` or `LiveView`. The `SimpleView` just
     "rpKeepFilesNum": 10,
     "rpLogLimitBytes": 5000000,
     "rpMaxAgeHours": 24
-    },      
+    },
 ```
 
 ### 4 Fine grained logging control
@@ -359,4 +359,12 @@ It is also possible to have more fine grained control over filtering of trace ou
   }
 }
 ```
+
+
+
+{% hint style="info" %}
+[QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)
+
+If you have any questions or need help, please raise an issue in [Github.](https://github.com/cardano-foundation/stake-pool-school-handbook/issues) We will respond as soon as possible.
+{% endhint %}
 

@@ -4,7 +4,7 @@ We need to create two sets of keys and addresses. One set to control our funds \
 
 Let's produce our cryptographic keys first, as we will need them to later create our addresses:
 
-### Payment key pair
+## Payment key pair
 
 Generate a _payment key pair_:
 
@@ -29,7 +29,7 @@ The files are in plain-text format and human readable:
 
 The first line describes the file type and should not be changed. The second line is a free form text that we could change if we so wished. The key itself is the cbor-encoded byte-string in the fourth line.
 
-### Payment address
+## Payment address
 
 We then use `payment.vkey` and `stake.vkey` to create our `payment address`:
 
@@ -53,7 +53,7 @@ To query your address \(see the utxo's at that address\), you first need to set 
 export CARDANO_NODE_SOCKET_PATH=~/cardano-node/relay/db/node.socket
 ```
 
-make sure that your node is running. Then use  `cardano-cli shelley query utxo` to find out the address' balance:
+make sure that your node is running. Then use `cardano-cli shelley query utxo` to find out the address' balance:
 
 ```text
 cardano-cli shelley query utxo \
@@ -67,4 +67,12 @@ you should see something like this:
                        TxHash                                 TxIx        Lovelace
 ----------------------------------------------------------------------------------
 ```
+
+
+
+{% hint style="info" %}
+[QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)
+
+If you have any questions or need help, please raise an issue in [Github.](https://github.com/cardano-foundation/stake-pool-school-handbook/issues) We will respond as soon as possible.
+{% endhint %}
 

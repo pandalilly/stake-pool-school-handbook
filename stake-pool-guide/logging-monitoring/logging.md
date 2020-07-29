@@ -64,5 +64,13 @@ For example, if we want to activate logging for all subsystems related to block 
 
 It is also possible to exert more fine-grained control on what information to log, but we will not cover this in this tutorial.
 
-![Severities](../../.gitbook/assets/severity.png)
+![Severities](https://github.com/cardano-foundation/stake-pool-school-handbook/tree/3abbeae984eb17aab3778e922956e72ae1cd702a/.gitbook/assets/severity.png)
+
+
+
+{% hint style="info" %}
+[QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)
+
+If you have any questions or need help, please raise an issue in [Github.](https://github.com/cardano-foundation/stake-pool-school-handbook/issues) We will respond as soon as possible.
+{% endhint %}
 
