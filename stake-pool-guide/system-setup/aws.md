@@ -5,9 +5,6 @@ If you do not have access to a computer running Linux \(or VirtualBox\), you can
 * Go to [Amazon Web Services \(AWS\)](https://aws.amazon.com/) and create a \(free\) account if you do not have one already.
 * Go to the _AWS Management Console_.
 * Go to the _EC2 Dashboard_.
-* Go to [Amazon Web Services \(AWS\)](https://aws.amazon.com/) and create a \(free\) account if you do not have one already.
-* Go to the _AWS Management Console_.
-* Go to the _EC2 Dashboard_.
 
 ![AWS Management Console.](https://github.com/cardano-foundation/stake-pool-school-handbook/tree/490a2c877b1c2b93450333a8297d1c398b950536/stake-pool-guide/system-setup/images/AMI.png)
 
