@@ -6,7 +6,7 @@ If you do not have access to a computer running Linux \(or VirtualBox\), you can
 * Go to the _AWS Management Console_.
 * Go to the _EC2 Dashboard_.
 
-![AWS Management Console.](https://github.com/cardano-foundation/stake-pool-school-handbook/tree/490a2c877b1c2b93450333a8297d1c398b950536/stake-pool-guide/system-setup/images/AMI.png)
+![AWS Management Console.](../images/AMI.png)
 
 * If you already have a running instance, go to step 9.
 * We first make sure to get enough harddrive space \(at least 24GB\). Click on _Volumes_.
@@ -60,4 +60,3 @@ If you have any questions or need help, please raise an issue in [Github.](https
 {% endhint %}
 
 Congratulations! You have now access to a machine running Linux.
-
