@@ -6,7 +6,7 @@ If you do not have access to a computer running Linux \(or VirtualBox\), you can
 * Go to the _AWS Management Console_.
 * Go to the _EC2 Dashboard_.
 
-![AWS Management Console.](../../.gitbook/assets/screen-shot-2020-07-15-at-21.43.14.png)
+![AWS Management Console.](images/AMI.png)
 
 * If you already have a running instance, go to step 9.
 * We first make sure to get enough harddrive space \(at least 24GB\). Click on _Volumes_.
@@ -50,4 +50,3 @@ If you do not have access to a computer running Linux \(or VirtualBox\), you can
 ![Choose connection method.](../../.gitbook/assets/connect2.png)
 
 Congratulations! You have now access to a machine running Linux.
-
