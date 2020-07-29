@@ -6,7 +6,7 @@ In the other hand your relay nodes can \(and should\) be connected to other rela
 
 Each node must run in its own dedicated machine or server.
 
-![Network topology](https://github.com/cardano-foundation/stake-pool-school-handbook/tree/3abbeae984eb17aab3778e922956e72ae1cd702a/.gitbook/assets/basic-network-with-relays-producers-passivenodes-walletnodes.png)
+![](../../.gitbook/assets/basic-network-with-relays-producers-passivenodes-walletnodes.png)
 
 
 
