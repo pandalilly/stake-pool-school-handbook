@@ -4,15 +4,15 @@
 
    You can find the link in the _Instances_ dashboard of the AWS console
 
-![Launch Wizard](https://github.com/cardano-foundation/stake-pool-school-handbook/tree/3abbeae984eb17aab3778e922956e72ae1cd702a/.gitbook/assets/launch-wizard.png)
+![](../../.gitbook/assets/launch-wizard.png)
 
 Click "Edit inbound rules".
 
-![Edit inbound rules](https://github.com/cardano-foundation/stake-pool-school-handbook/tree/3abbeae984eb17aab3778e922956e72ae1cd702a/.gitbook/assets/edit-inbound-rules.png)
+![](../../.gitbook/assets/edit-inbound-rules.png)
 
 Then add a new rule for "Custom TCP", port range 12789, source "Anywhere".
 
-![new inbound rules](https://github.com/cardano-foundation/stake-pool-school-handbook/tree/3abbeae984eb17aab3778e922956e72ae1cd702a/.gitbook/assets/new-inbound-rule.png)
+![](../../.gitbook/assets/new-inbound-rule.png)
 
 1. On the AWS instance we edit the node configuration file shelley\_testnet-config.json providing the host and port:
 

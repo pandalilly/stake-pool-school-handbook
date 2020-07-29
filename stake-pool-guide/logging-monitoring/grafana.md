@@ -26,23 +26,23 @@ On your local machine you can now go to a.b.c.d:3000
 
 You will see this, default user and password are admin/admin.
 
-![Welcome](https://github.com/cardano-foundation/stake-pool-school-handbook/tree/3abbeae984eb17aab3778e922956e72ae1cd702a/.gitbook/assets/grafana_13.35.19.png)
+![](../../.gitbook/assets/edit-inbound-rules%20%281%29.png)
 
 Change your password
 
-![Password](https://github.com/cardano-foundation/stake-pool-school-handbook/tree/3abbeae984eb17aab3778e922956e72ae1cd702a/.gitbook/assets/grafana_13.39.26.png)
+![](../../.gitbook/assets/grafana_13.39.26.png)
 
 Add your first data source
 
-![DataSource](https://github.com/cardano-foundation/stake-pool-school-handbook/tree/3abbeae984eb17aab3778e922956e72ae1cd702a/.gitbook/assets/grafana_13.39.52.png)
+![](../../.gitbook/assets/grafana_13.39.52.png)
 
 Select Prometheus
 
-![Prometheus](https://github.com/cardano-foundation/stake-pool-school-handbook/tree/3abbeae984eb17aab3778e922956e72ae1cd702a/.gitbook/assets/grafana_13.40.31.png)
+![](../../.gitbook/assets/grafana_13.40.31.png)
 
 Rename it as **prometheus** \(IOHK dashboard uses this name, this is useful if you want to import one of our dashboards\)
 
-![prometheus](https://github.com/cardano-foundation/stake-pool-school-handbook/tree/3abbeae984eb17aab3778e922956e72ae1cd702a/.gitbook/assets/grafana_prometheus.png)
+![](../../.gitbook/assets/grafana_13.41.50.png)
 
 Under HTTP, configure the data source
 
@@ -55,19 +55,19 @@ Click on `save and test`
 
 On the left panel open the Dashboards menu and go to manage:
 
-![Dashboard](https://github.com/cardano-foundation/stake-pool-school-handbook/tree/3abbeae984eb17aab3778e922956e72ae1cd702a/.gitbook/assets/grafana_13.55.40.png)
+![](../../.gitbook/assets/grafana_13.55.40.png)
 
 You can create a New Dashboard from scratch or import one of IOHK's dashboards. To import a dashboard, click on import
 
-Copy `cardano-application-dashboard-v2.json` from the [cardano-ops repository](chttps://raw.githubusercontent.com/input-output-hk/cardano-ops/ea161f35792e74b41efa749085ead64c901f784d/modules/grafana/cardano/cardano-application-dashboard-v2.json)
+Copy `cardano-application-dashboard-v2.json` from the [cardano-ops repository](https://raw.githubusercontent.com/input-output-hk/cardano-ops/ea161f35792e74b41efa749085ead64c901f784d/modules/grafana/cardano/cardano-application-dashboard-v2.json)
 
 and paste the json under `Import via panel json`
 
-![Dashboard](https://github.com/cardano-foundation/stake-pool-school-handbook/tree/3abbeae984eb17aab3778e922956e72ae1cd702a/.gitbook/assets/grafana_14.24.43.png)
+![](../../.gitbook/assets/grafana_14.24.43.png)
 
 Enter to your dashboard, and after a few seconds you should see something like this.
 
-![Dashboard](https://github.com/cardano-foundation/stake-pool-school-handbook/tree/3abbeae984eb17aab3778e922956e72ae1cd702a/.gitbook/assets/grafana_dashboard.png)
+![](../../.gitbook/assets/grafana_dashboard.png)
 
 From here you can configure alerts or change the views on your dashboard.
 
