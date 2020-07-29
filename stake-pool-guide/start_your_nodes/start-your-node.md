@@ -34,6 +34,10 @@ To start the node, run the following command from inside the relay directory:
 Replace x.x.x.x with your public IP
 {% endhint %}
 
+![](../../.gitbook/assets/starting-single-node.png)
+
+Open a new terminal or ssh session 
+
 Create the environment variable CARDANO\_NODE\_SOCKET\_PATH
 
 ```text
