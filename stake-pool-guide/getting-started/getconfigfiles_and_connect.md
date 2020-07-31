@@ -1,9 +1,10 @@
 # Get configuration files
 
-Starting the node and connecting it to the testnet requires 3 configuration files:
+Starting the node and connecting it to the testnet requires 4 configuration files:
 
 * topology.json
-* genesis.json
+* BYRON genesis.json
+* SHELLEY genesis.json
 * config.json
 
 In your home directory, create a new directory for the configuration files:
@@ -15,7 +16,7 @@ cd relay
 ```
 
 {% hint style="info" %}
-You can download the configuration files from:
+You can download the TESTNET configuration files from:
 
 [https://hydra.iohk.io/job/Cardano/cardano-node/cardano-deployment/latest-finished/download/1/index.html](https://hydra.iohk.io/job/Cardano/cardano-node/cardano-deployment/latest-finished/download/1/index.html)
 {% endhint %}
