@@ -10,26 +10,26 @@
 
 * [Syllabus](syllabus/syllabus.md)
 
-## VIDEO LESSONS
+## LESSONS
 
-* [Ouroboros Protocol](video-lessons/ouroboros.md)
-* [Introduction to Cardano](video-lessons/introduction-to-cardano.md)
-* [Installing VirtualBox](video-lessons/vb.md)
-* [Setup a server on AWS](video-lessons/aws.md)
-* [Alternative to AWS](video-lessons/alternative-to-aws.md)
-* [Installing cardano-node](video-lessons/installing.md)
-* [Get configuration files and run the node](video-lessons/config-files-run-node.md)
-* [Using the cardano-cli](video-lessons/cli.md)
-* [The UTxO model](video-lessons/utxo.md)
-* [Generate Payment keys and addresses](video-lessons/payment-keys-and-address.md)
-* [Request funds to the faucet](video-lessons/faucet.md)
-* [Simple transaction](video-lessons/transaction.md)
-* [Stake keys and address](video-lessons/stake-keys-and-address.md)
-* [Regsiter stake key to the blockchain](video-lessons/register-stake-key.md)
-* [Generate stake pool keys](video-lessons/stakepools-keys.md)
-* [Topology files](video-lessons/topology-files.md)
-* [Register stake pool and metadata](video-lessons/register-stake-pool.md)
-* [Logging and monitoring with prometheus](video-lessons/logging-prometheus.md)
+* [Ouroboros Protocol](lessons/ouroboros.md)
+* [Introduction to Cardano](lessons/introduction-to-cardano.md)
+* [Installing VirtualBox](lessons/vb.md)
+* [Setup a server on AWS](lessons/aws.md)
+* [Alternative to AWS](lessons/alternative-to-aws.md)
+* [Installing cardano-node](lessons/installing.md)
+* [Get configuration files and run the node](lessons/config-files-run-node.md)
+* [Using the cardano-cli](lessons/cli.md)
+* [The UTxO model](lessons/utxo.md)
+* [Generate Payment keys and addresses](lessons/payment-keys-and-address.md)
+* [Request funds to the faucet](lessons/faucet.md)
+* [Simple transaction](lessons/transaction.md)
+* [Stake keys and address](lessons/stake-keys-and-address.md)
+* [Regsiter stake key to the blockchain](lessons/register-stake-key.md)
+* [Generate stake pool keys](lessons/stakepools-keys.md)
+* [Topology files](lessons/topology-files.md)
+* [Register stake pool and metadata](lessons/register-stake-pool.md)
+* [Logging and monitoring with prometheus](lessons/logging-prometheus.md)
 
 ## STAKE POOL HANDBOOK <a id="stake-pool-guide"></a>
 
