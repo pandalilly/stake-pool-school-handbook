@@ -8,11 +8,11 @@ In this lesson we will learn how to get the configuration files needed to run th
 
 We will also learn how to use tmux.
 
-## Get configuration files and start the node in simple view and in live view.
+## Get configuration files and start the node:  Simple view and in Live view.
 
 {% embed url="https://youtu.be/miYXZFBrOJ8" caption="" %}
 
-
+**Please find the written tutorial to complete this task here:** [**CONFIGURATION FILES**](config-files-run-node.md)\*\*\*\*
 
 {% hint style="info" %}
 [QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)
