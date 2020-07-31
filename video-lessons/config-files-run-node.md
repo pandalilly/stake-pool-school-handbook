@@ -12,7 +12,7 @@ We will also learn how to use tmux.
 
 {% embed url="https://youtu.be/miYXZFBrOJ8" caption="" %}
 
-**Please find the written tutorial to complete this task here:** [**CONFIGURATION FILES**](config-files-run-node.md)\*\*\*\*
+**Please find the written tutorial to complete this task here:** [**CONFIGURATION FILES**](../stake-pool-guide/getting-started/getconfigfiles_and_connect.md)\*\*\*\*
 
 {% hint style="info" %}
 [QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)
