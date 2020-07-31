@@ -12,10 +12,10 @@ To complete this course you need a Linux System. If you have a computer running 
 
 {% embed url="https://youtu.be/jYisjnTxtms" caption="" %}
 
-
+> **Please find the Virtual Box tutorial to complete this task here:** [**VIRTUAL BOX**](../stake-pool-guide/system-setup/virtual-box.md)\*\*\*\*
 
 {% hint style="info" %}
-[QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)
+\*\*\*\*[QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)
 
 If you have any questions or need help, please raise an issue in [Github.](https://github.com/cardano-foundation/stake-pool-school-handbook/issues) We will respond as soon as possible.
 {% endhint %}

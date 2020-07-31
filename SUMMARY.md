@@ -37,7 +37,7 @@
   * [Virtual Box](stake-pool-guide/system-setup/virtual-box.md)
   * [Configure a Linux server on AWS](stake-pool-guide/system-setup/aws.md)
 * [Setting up your node](stake-pool-guide/getting-started/README.md)
-  * [Installing and Running a node](stake-pool-guide/getting-started/install-node.md)
+  * [Installing Cardano-node](stake-pool-guide/getting-started/install-node.md)
   * [Get configuration files](stake-pool-guide/getting-started/getconfigfiles_and_connect.md)
   * [Understanding your configuration files and how to use them:](stake-pool-guide/getting-started/understanding-config-files.md)
   * [Command Line Interface](stake-pool-guide/getting-started/cli.md)
