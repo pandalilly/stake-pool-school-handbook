@@ -4,7 +4,7 @@
 
 Set up your platform:
 
-You will need: THIS IS AN EXAMPLE OF HOW TO EDIT THIS DOCS- 
+You will need: 
 
 * An x86 host \(AMD or Intel\), Virtual Machine or AWS instance with at least 2 cores, 4GB of RAM and at least 10GB of free disk space;
 * A recent version of Linux, not Windows or MacOS – this will help us isolate any issues that arise;
@@ -38,7 +38,9 @@ For Debian/Ubuntu use the following instead:
 
 ```text
 sudo apt-get update -y
-sudo apt-get install build-essential pkg-config libffi-dev libgmp-dev libssl-dev libtinfo-dev libsystemd-dev zlib1g-dev make g++ tmux git jq wget libncursesw5 libtool autoconf -y
+sudo apt-get install build-essential pkg-config libffi-dev libgmp-dev -y
+sudo apt-get install libssl-dev libtinfo-dev libsystemd-dev zlib1g-dev -y
+sudo apt-get install make g++ tmux git jq wget libncursesw5 libtool autoconf -y
 ```
 
 If you are using a different flavor of Linux, you will need to use the package manager suitable for your platform instead of `yum` or `apt-get`, and the names of the packages you need to install might differ.
