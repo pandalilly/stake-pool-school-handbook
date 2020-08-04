@@ -129,6 +129,7 @@ export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH"
 ## Download the source code for cardano-node
 
 ```text
+cd
 git clone https://github.com/input-output-hk/cardano-node.git
 ```
 
