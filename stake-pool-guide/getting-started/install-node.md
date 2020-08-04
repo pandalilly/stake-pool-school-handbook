@@ -4,7 +4,7 @@
 
 Set up your platform:
 
-You will need: 
+You will need:
 
 * An x86 host \(AMD or Intel\), Virtual Machine or AWS instance with at least 2 cores, 4GB of RAM and at least 10GB of free disk space;
 * A recent version of Linux, not Windows or MacOS – this will help us isolate any issues that arise;
@@ -187,15 +187,5 @@ git checkout tags/<the-tag-you-want>
 cabal install cardano-node cardano-cli
 ```
 
-{% hint style="info" %}
+
 **Note:** It might be necessary to delete the `db`-folder \(the database-folder\) before running an updated version of the node.
-{% endhint %}
-
-
-
-{% hint style="info" %}
-[QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)
-
-If you have any questions or need help, please raise an issue in [Github.](https://github.com/cardano-foundation/stake-pool-school-handbook/issues) We will respond as soon as possible.
-{% endhint %}
-
