@@ -6,7 +6,7 @@ If you experience any problems while setting up your network, we are here to hel
 
 \`\`\`$ cardano-cli shelley transaction build-raw --tx-in f5296e996940b1c81f781594293d423b4250a454f5832b0740a923f74460d34\#1 --tx-out $\(cat payment2.addr\)+100000000 --tx-out $\(cat payment.addr\)+899832033 --ttl 335000 --fee 167965 --out-file tx001.raw
 
-```text
+```
 ```> option --tx-in: Failed reading: Your input is either 
 malformed or not hex encoded: 
 f5296e996940b1c81f781594293d423b4250a454f5832b0740a923f74460d34
@@ -18,7 +18,7 @@ f5296e996940b1c81f781594293d423b4250a454f5832b0740a923f74460d34
 
 \`\`\`$ cardano-cli shelley query utxo --address $\(cat payment.addr\) --testnet-magic 42
 
-```text
+```
 **Problem**: ExpiredUTxO
 
 ```$ cardano-cli shelley transaction submit \
@@ -28,7 +28,7 @@ f5296e996940b1c81f781594293d423b4250a454f5832b0740a923f74460d34
 
 \`\`\`&gt; ApplyTxError \[LedgerFailure \(UtxowFailure \(UtxoFailure\(ExpiredUTxO {pfUTXOttl = SlotNo {unSlotNo = 123456}, pfUTXOcurrentSlot = SlotNo {unSlotNo = 123457}}\)\)\)\]
 
-```text
+```
 **Diagnosis**: TTL has already passed. 
 
 **Solution**: Look at pfUTXOttl and pfUTXOcurrentSlot. Current Slot is ahead of UTXOttl. 
@@ -44,7 +44,7 @@ Build a new transaction with a TTL (time to live) higher than Current Slot. As a
 
 \`\`\`ApplyTxError \[LedgerFailure \(UtxowFailure \(UtxoFailure \(FeeTooSmallUTxO \(Coin 172409\) \(Coin 167965\)\)\)\),LedgerFailure \(UtxowFailure \(UtxoFailure \(ValueNotConservedUTxO \(Coin 1000000000\)\(Coin 999999998\)\)\)\)\]
 
-```text
+```
 **Diagnosis**: Value not Conserved: (Input UTXO ≠ Fee + Amount sent + Change)
 
 **Solution**: Check that output amount is equal to input amount
@@ -58,7 +58,7 @@ Build a new transaction with a TTL (time to live) higher than Current Slot. As a
 
 \`\`\`&gt; ApplyTxError \[LedgerFailure \(UtxowFailure \(UtxoFailure \(BadInputsUTxO \(fromList \[TxIn \(TxId {\_TxId =f5296e996940b1c81f781594293d423b4250a454f5832b0740a923f74460d34e}\) \]\)\)\)\)
 
-```text
+```
 **Diagnosis**: Bad UTXO transaction index
 
 **Solution**: Verify the UTXO transaction index using:

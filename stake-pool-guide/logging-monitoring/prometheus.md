@@ -16,7 +16,7 @@ Then add a new rule for "Custom TCP", port range 12789, source "Anywhere".
 
 1. On the AWS instance we edit the node configuration file shelley\_testnet-config.json providing the host and port:
 
-   ```text
+   ```
     hasPrometheus:
       - "0.0.0.0"
       - 12789
@@ -30,7 +30,7 @@ Then add a new rule for "Custom TCP", port range 12789, source "Anywhere".
    * [Node exporter](https://prometheus.io/docs/guides/node-exporter/)
 4. Prometheus needs to be configured to monitor your Cardano Node. A minimalistic configuration file doing this could look like this:
 
-   ```text
+   ```
     global:
       scrape_interval:     15s
       external_labels:

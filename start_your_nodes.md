@@ -2,7 +2,7 @@
 
 START your **relay node** with:
 
-```text
+```
 cardano-node run \
 --topology shelley_testnet-topology.json \
 --database-path db \

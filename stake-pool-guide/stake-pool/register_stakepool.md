@@ -40,7 +40,7 @@ Registering your stake pool requires:
 
 ## Create a JSON file with your pool's metadata
 
-```text
+```
 {
 "name": "TestPool",
 "description": "The pool that tests all the pools",
@@ -57,7 +57,7 @@ You can use a GIST in github, just make sure that the URL is less than 65 charac
 
 This validates that the JSON fits the required schema, if it does, you will get the hash of your file.
 
-```text
+```
 cardano-cli shelley stake-pool metadata-hash --pool-metadata-file testPool.json
 
 >6bf124f217d0e5a0a8adb1dbd8540e1334280d49ab861127868339f43b3948af
@@ -67,7 +67,7 @@ cardano-cli shelley stake-pool metadata-hash --pool-metadata-file testPool.json
 
 Create a _stake pool registration certificate_:
 
-```text
+```
 cardano-cli shelley stake-pool registration-certificate \
 --cold-verification-key-file cold.vkey \
 --vrf-verification-key-file vrf.vkey \
@@ -105,7 +105,7 @@ We could use a different key for the rewards, and we could provide more than one
 
 The **pool.cert** file should look like this:
 
-```text
+```
 type: StakePoolCertificateShelley
 title: Free form text
 cbor-hex:
@@ -120,7 +120,7 @@ cbor-hex:
 
 We have to honor our pledge by delegating at least the pledged amount to our pool, so we have to create a _delegation certificate_ to achieve this:
 
-```text
+```
 cardano-cli shelley stake-address delegation-certificate \
 --stake-verification-key-file stake.vkey \
 --cold-verification-key-file cold.vkey \
@@ -135,7 +135,7 @@ Finally we need to submit the pool registration certificate and the delegation c
 
 As before, we start by drafting the transaction:
 
-```text
+```
 cardano-cli shelley transaction build-raw \
 --tx-in 9db6cf...#0 \
 --tx-out $(cat paymentwithstake.addr)+0 \
@@ -148,7 +148,7 @@ cardano-cli shelley transaction build-raw \
 
 Calculate the the fees
 
-```text
+```
 cardano-cli shelley transaction calculate-min-fee \
 --tx-body-file tx.raw \
 --tx-in-count 1 \
@@ -163,7 +163,7 @@ cardano-cli shelley transaction calculate-min-fee \
 
 We have to pay a deposit for the stake pool registration. The deposit amount is specified in the genesis file and in `protocol.json`
 
-```text
+```
 "poolDeposit": 500000000
 ```
 
@@ -171,7 +171,7 @@ to calculate the correct amounts, we first query our address as explained [here]
 
 We might get something like
 
-```text
+```
                             TxHash                                 TxIx        Lovelace
 ----------------------------------------------------------------------------------------
 9db6cf...                                                            0      999999267766
@@ -181,14 +181,14 @@ Note that the available funds are higher than the pledge, which is fine. They ju
 
 In this example, we can now calculate our change:
 
-```text
+```
 expr 999999267766 - 500000000 - 184685
 > 999499083081
 ```
 
 Now we can build the transaction:
 
-```text
+```
 cardano-cli shelley transaction build-raw \
 --tx-in 9db6cf...#0 \
 --tx-out $(cat addresses/paymentwithstake.addr)+999499083081 \
@@ -201,7 +201,7 @@ cardano-cli shelley transaction build-raw \
 
 Sign it:
 
-```text
+```
 cardano-cli shelley transaction sign \
 --tx-body-file tx.raw \
 --signing-key-file payment.skey \
@@ -213,7 +213,7 @@ cardano-cli shelley transaction sign \
 
 And submit:
 
-```text
+```
 cardano-cli shelley transaction submit \
 --tx-file tx.signed \
 --testnet-magic 42
@@ -221,19 +221,19 @@ cardano-cli shelley transaction submit \
 
 To verify that your stake pool registration was indeed successful, you can perform the following steps:
 
-```text
+```
 cardano-cli shelley stake-pool id --verification-key-file cold.vkey
 ```
 
 will output your poolID. You can then check for the presence of your poolID in the network ledger state, with the following command:
 
-```text
+```
 cardano-cli shelley query ledger-state --testnet-magic 42 | grep publicKey | grep <poolId>
 ```
 
 or
 
-```text
+```
 cardano-cli shelley query ledger-state --testnet-magic 42 \
 | jq '._delegationState._pstate._pParams.<poolid>'
 ```

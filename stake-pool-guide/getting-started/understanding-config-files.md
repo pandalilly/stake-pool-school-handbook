@@ -4,7 +4,7 @@
 
 Tells your node to which nodes in the network it should talk to. A minimal version of this file looks like this:
 
-```text
+```
 {
   "Producers": [
     {
@@ -33,7 +33,7 @@ The genesis file is generated with the `cardano-cli` by reading a `genesis.spec.
 
 The `genesis.json` file looks like the one below.
 
-```text
+```
     {
     "activeSlotsCoeff": 0.05,
     "protocolParams": {
@@ -151,7 +151,7 @@ This file has **4** sections that allow you to have full control on what your no
 
 First section relates the basic node configuration parameters. Make sure you have to `TPraos`as the protocol, the correct path to the `shelley_testnet-genesis.json` file, `RequiresMagic`for its use in a testnet. Note that in this example we are using the SimpleView. This will send the output to `stdout`. Other option is `LiveView` which uses a terminal multiplexer to generate a fancy view. We will cover this topic later.
 
-```text
+```
 {
   "Protocol": "TPraos",
   "GenesisFile": "shelley_testnet-genesis.json",
@@ -162,7 +162,7 @@ First section relates the basic node configuration parameters. Make sure you hav
 
 This protocol version number gets used by block producing nodes as part of the system for agreeing on and synchronising protocol updates.You just need to be aware of the latest version supported by the network. You dont need to change anything here.
 
-```text
+```
   "ApplicationName": "cardano-sl",
   "ApplicationVersion": 0,
   "LastKnownBlockVersion-Alt": 0,
@@ -192,7 +192,7 @@ The node can run in either the `SimpleView` or `LiveView`. The `SimpleView` just
 
 `rotation` The default file rotation settings for katip scribes, unless overridden in the setupScribes above for specific scribes.
 
-```text
+```
   "TurnOnLogging": true,
   "TurnOnLogMetrics": true,
   "ViewMode": "SimpleView",
@@ -264,7 +264,7 @@ It is also possible to have more fine grained control over filtering of trace ou
 
 `mapSubtrace` This section is more expressive, we are working on its documentation.
 
-```text
+```
   "options": {
     "mapBackends": {
       "cardano.node-metrics": [

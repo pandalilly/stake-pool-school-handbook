@@ -4,7 +4,7 @@ Starting the the node uses the command `cardano-node run` and a set of options.
 
 You can get the complete list of available options with `cardano-node run`
 
-```text
+```
 --topology FILEPATH             The path to a file describing the topology.
 --database-path FILEPATH        Directory where the state is stored.
 --socket-path FILEPATH          Path to a cardano-node socket
@@ -20,7 +20,7 @@ You can get the complete list of available options with `cardano-node run`
 
 To start the node, run the following command from inside the relay directory:
 
-```text
+```
  cardano-node run \
  --topology shelley_testnet-topology.json \
  --database-path db \
@@ -40,13 +40,13 @@ Open a new terminal or ssh session
 
 Create the environment variable CARDANO\_NODE\_SOCKET\_PATH
 
-```text
+```
 export CARDANO_NODE_SOCKET_PATH=~/relay/db/node.socket
 ```
 
 Check whether the node is syncing by fetching the current tip, a couple of times, `slotNo` should be increasing. `--testnet-magic 42` identifies the Shelley testnet
 
-```text
+```
 cardano-cli shelley query tip --testnet-magic 42
 
 {
