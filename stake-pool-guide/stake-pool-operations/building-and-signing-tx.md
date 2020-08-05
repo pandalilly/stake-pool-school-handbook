@@ -3,8 +3,8 @@
 Transactions vary in complexity, depending on their intended outcomes, but all transactions share a number of attributes:
 
 * Input - contains funds that are spent by the transaction. It is simply the output of an earlier transaction. A transaction can have multiple inputs.
-* Output - determine where the funds go to. An output is given by a payment address and an amount. A transaction can have multiple outputs.
-* Payment address - an address that can receive payments, This is the only type of addresses that can be specified in a transaction output.
+* Output - determines where the funds go to. An output is given by a payment address and an amount. A transaction can have multiple outputs.
+* Payment address - an address that can receive payments. This is the only type of address that can be specified in a transaction output.
 * Payment and stake key pairs - sets of files containing a public verification key and a private signing key.
 * Time-to-live \(TTL\) - represents a slot, or deadline by which a transaction must be submitted. The TTL is an absolute slot number, rather than a relative one, which means that the --ttl value should be greater than the current slot number. A transaction becomes invalid once its ttl expires.
 
@@ -76,7 +76,7 @@ cardano-cli shelley transaction calculate-min-fee \
 
 **Signing a transaction**
 
-A transaction must prove that it has the right to spend its inputs. In the most common case, this means that a transaction must be signed by the signing keys belonging to the payment addresses of the inputs. If a transaction contains certificates, it must additionally be signed by somebody with the right to issue those certificates. For example, a stake address registration certificate must be signed by the signing key of the corresponding stake key pair.
+A transaction must prove that it has the right to spend its inputs. Most commonly, this means that a transaction must be signed by the signing keys belonging to the payment addresses of the inputs. If a transaction contains certificates, it must additionally be signed by somebody with the right to issue those certificates. For example, a stake address registration certificate must be signed by the signing key of the corresponding stake key pair.
 
 ```text
 cardano-cli shelley transaction sign \
