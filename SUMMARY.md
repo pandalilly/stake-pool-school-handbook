@@ -11,6 +11,7 @@
 * [INTRODUCTION](lessons/introduction/README.md)
   * [Introduction to the course](lessons/introduction/welcome-to-the-course.md)
   * [Syllabus](lessons/introduction/syllabus.md)
+  * [About Cardano](lessons/introduction/about-cardano.md)
   * [Introduction to Cardano](lessons/introduction/introduction-to-cardano.md)
   * [Ouroboros Protocol](lessons/introduction/ouroboros.md)
 * [LESSON 1](lessons/lesson-1/README.md)
@@ -84,6 +85,7 @@
   * [Making a Shelley blockchain from scratch](reference/shelley-genesis.md)
   * [Cardano Node CLI Reference](reference/cardano-node-cli-reference.md)
   * [Ouroboros protocol](reference/ouroboros-protocol.md)
+  * [Cardano glosssary](reference/cardano-glosssary.md)
 
 ## Additional material
 
