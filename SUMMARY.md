@@ -35,8 +35,8 @@
 ## STAKE POOL HANDBOOK <a id="stake-pool-guide"></a>
 
 * [System setup](stake-pool-guide/system-setup/README.md)
-  * [Virtual Box](stake-pool-guide/system-setup/virtual-box.md)
   * [Configure a Linux server on AWS](stake-pool-guide/system-setup/aws.md)
+  * [Virtual Box](stake-pool-guide/system-setup/virtual-box.md)
 * [Setting up your node](stake-pool-guide/getting-started/README.md)
   * [Installing Cardano-node](stake-pool-guide/getting-started/install-node.md)
   * [Get configuration files](stake-pool-guide/getting-started/getconfigfiles_and_connect.md)
