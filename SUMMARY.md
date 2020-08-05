@@ -85,7 +85,7 @@
   * [Making a Shelley blockchain from scratch](reference/shelley-genesis.md)
   * [Cardano Node CLI Reference](reference/cardano-node-cli-reference.md)
   * [Ouroboros protocol](reference/ouroboros-protocol.md)
-  * [Cardano glosssary](reference/cardano-glosssary.md)
+  * [Cardano glossary](reference/cardano-glosssary.md)
 
 ## Additional material
 
