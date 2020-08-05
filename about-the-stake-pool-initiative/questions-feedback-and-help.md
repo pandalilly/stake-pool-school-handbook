@@ -7,7 +7,7 @@ description: >-
 
 # Questions, feedback & help
 
-
+We want to continuously improve this course and content. Your feedback is always appreciated.  
 
 {% hint style="info" %}
  QUESTIONS AND FEEDBACK
