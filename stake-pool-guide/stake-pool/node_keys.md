@@ -29,14 +29,14 @@ The **core node** needs:
 
 Create a directory to store your keys:
 
-```
+```text
 mkdir pool-keys
 cd pool-keys
 ```
 
 ### Generate **Cold** Keys and a **Cold\_counter**:
 
-```
+```text
 cardano-cli shelley node key-gen \
 --cold-verification-key-file cold.vkey \
 --cold-signing-key-file cold.skey \
@@ -45,7 +45,7 @@ cardano-cli shelley node key-gen \
 
 ### Generate VRF Key pair
 
-```
+```text
 cardano-cli shelley node key-gen-VRF \
 --verification-key-file vrf.vkey \
 --signing-key-file vrf.skey
@@ -53,7 +53,7 @@ cardano-cli shelley node key-gen-VRF \
 
 ### Generate the KES Key pair
 
-```
+```text
 cardano-cli shelley node key-gen-KES \
 --verification-key-file kes.vkey \
 --signing-key-file kes.skey
@@ -63,7 +63,7 @@ cardano-cli shelley node key-gen-KES \
 
 We need to know the slots per KES period, we get it from the genesis file:
 
-```
+```text
 cat shelley_testnet-genesis.json | grep KESPeriod
 > "slotsPerKESPeriod": 3600,
 ```
@@ -74,7 +74,7 @@ Then we need the current tip of the blockchain:
 
 We can use your relay node to query the tip:
 
-```
+```text
 cardano-cli shelley query tip --testnet-magic 42
 
 {
@@ -86,7 +86,7 @@ cardano-cli shelley query tip --testnet-magic 42
 
 Look for Tip `unSlotNo` value. In this example we are on slot 656260. So we have KES period is 182:
 
-```
+```text
 expr 656260 / 3600
 > 182
 ```
@@ -97,7 +97,7 @@ expr 656260 / 3600
 
 To generate the certificate:
 
-```
+```text
 cardano-cli shelley node issue-op-cert \
 --kes-verification-key-file kes.vkey \
 --cold-signing-key-file cold.skey \
@@ -114,7 +114,7 @@ The best place for your cold keys is a **SECURE USB** or other **SECURE EXTERNAL
 
 For example:
 
-```
+```text
 scp -i " file.pem" remote_username@10.10.0.2:~/poolkeys/cold* /local/directory
 
 > Transferred: sent 3220, received 6012 bytes, in 1.2 seconds
@@ -123,10 +123,6 @@ debug1: Exit status 0
 ```
 
 Later on we will learn how to register our pool in the blockchain.
-
-
-
-
 
 {% hint style="info" %}
 [QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)

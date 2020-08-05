@@ -16,13 +16,11 @@ Follow this tutorial to setup a virtual machine with ubuntu 20.04 Desktop:
 
 When you have finished creating your virtual Machine, open a terminal and run to install Install VirtualBox Guest Additions on Ubuntu VirtualBox VM.
 
-```
+```text
 sudo apt install virtualbox-guest-dkms virtualbox-guest-x11 virtualbox-guest-utils
 ```
 
 {% page-ref page="../../lessons/vb.md" %}
-
-
 
 {% hint style="info" %}
 [QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)

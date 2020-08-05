@@ -11,7 +11,7 @@ We need to _register_ our **stake key** in the blockchain. To achieve this, we:
 
 ## Create a _registration certificate_:
 
-```
+```text
 cardano-cli shelley stake-address registration-certificate \
 --stake-verification-key-file stake.vkey \
 --out-file stake.cert
@@ -25,7 +25,7 @@ As before, to create the transaction you need to determine the TTL querying the 
 
 ## Draft transaction
 
-```
+```text
 cardano-cli shelley transaction build-raw \
 --tx-in b64ae44e1195b04663ab863b62337e626c65b0c9855a9fbb9ef4458f81a6f5ee#1 \
 --tx-out $(cat paymentwithstake.addr)+0 \
@@ -39,7 +39,7 @@ cardano-cli shelley transaction build-raw \
 
 This transaction has only 1 input \(the UTXO used to pay the transaction fee\) and 1 output \(our `paymentwithstake.addr` to which we are sending the change\). This transaction has to be signed by both the payment signing key `payment.skey` and the stake signing key `stake.skey`; and includes the certificate `stake.cert`:
 
-```
+```text
 cardano-cli shelley transaction calculate-min-fee \
 --tx-body-file tx.raw \
 --tx-in-count 1 \
@@ -56,7 +56,7 @@ In this transaction we have to not only pay transaction fees, but also include a
 
 The deposit amount can be found in the `protocol.json` under `keyDeposit`:
 
-```
+```text
     ...
     "keyDeposit": 400000,
     ...
@@ -64,7 +64,7 @@ The deposit amount can be found in the `protocol.json` under `keyDeposit`:
 
 Query the UTXO:
 
-```
+```text
     cardano-cli shelley query utxo \
         --address $(cat payment.addr) \
         --testnet-magic 42
@@ -76,7 +76,7 @@ Query the UTXO:
 
 So if we had 1000 ada, to calculate the change to send back to `payment.addr` we run:
 
-```
+```text
 expr 1000000000 - 171485 - 400000
 
 > 999428515
@@ -86,7 +86,7 @@ expr 1000000000 - 171485 - 400000
 
 Build the transaction:
 
-```
+```text
 cardano-cli shelley transaction build-raw \
 --tx-in b64ae44e1195b04663ab863b62337e626c65b0c9855a9fbb9ef4458f81a6f5ee#1 \
 --tx-out $(cat paymentwithstake.addr)+999428515 \
@@ -98,7 +98,7 @@ cardano-cli shelley transaction build-raw \
 
 Sign it:
 
-```
+```text
 cardano-cli shelley transaction sign \
 --tx-body-file tx.raw \
 --signing-key-file payment.skey \
@@ -109,15 +109,13 @@ cardano-cli shelley transaction sign \
 
 And submit it:
 
-```
+```text
 cardano-cli shelley transaction submit \
 --tx-file tx.signed \
 --testnet-magic 42
 ```
 
 Your stake key is now registered in the blockchain.
-
-
 
 {% hint style="info" %}
 [QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)

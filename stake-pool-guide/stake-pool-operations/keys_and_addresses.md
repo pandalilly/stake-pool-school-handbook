@@ -8,7 +8,7 @@ Let's produce our cryptographic keys first, as we will need them to later create
 
 Generate a _payment key pair_:
 
-```
+```text
  cardano-cli shelley address key-gen \
  --verification-key-file payment.vkey \
  --signing-key-file payment.skey
@@ -18,7 +18,7 @@ This will create two files \(here named `payment.vkey` and `payment.skey`\), one
 
 The files are in plain-text format and human readable:
 
-```
+```text
  cat payment.vkey
 
  > type: VerificationKeyShelley
@@ -33,7 +33,7 @@ The first line describes the file type and should not be changed. The second lin
 
 We then use `payment.vkey` and `stake.vkey` to create our `payment address`:
 
-```
+```text
  cardano-cli shelley address build \
  --payment-verification-key-file payment.vkey \
  --out-file payment.addr \
@@ -42,20 +42,20 @@ We then use `payment.vkey` and `stake.vkey` to create our `payment address`:
 
 This created the file payment.addr that is already associated with our stake keys:
 
-```
+```text
 cat payment.addr
 > 00ec78e3d3916636101f6d9539c451f248ba200f38f2c33129f7ef36d66853603e872296956a4d86
 ```
 
 To query your address \(see the utxo's at that address\), you first need to set environment variable `CARDANO_NODE_SOCKET_PATH` to the socket-path specified in your node configuration. In this example we will use the block-producing node created in the previous steps:
 
-```
+```text
 export CARDANO_NODE_SOCKET_PATH=~/cardano-node/relay/db/node.socket
 ```
 
 make sure that your node is running. Then use `cardano-cli shelley query utxo` to find out the address' balance:
 
-```
+```text
 cardano-cli shelley query utxo \
 --address $(cat payment.addr) \
 --testnet-magic 42
@@ -63,12 +63,10 @@ cardano-cli shelley query utxo \
 
 you should see something like this:
 
-```
+```text
                        TxHash                                 TxIx        Lovelace
 ----------------------------------------------------------------------------------
 ```
-
-
 
 {% hint style="info" %}
 [QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)

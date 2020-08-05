@@ -14,7 +14,7 @@ When building and submitting a transaction you need to check the current tip of 
 
 Before submitting a transaction, it must be built. Create a raw file that contains all relevant data for the transaction:
 
-```
+```text
 cardano-cli shelley transaction build-raw \
 
 --tx-in TX-IN            The input transaction as TxId#TxIx where TxId is the
@@ -43,7 +43,7 @@ cardano-cli shelley transaction build-raw \
 
 Every transaction on the blockchain carries a fee, which needs to be calculated each time. This fee calculation requires protocol parameters.
 
-```
+```text
 cardano-cli shelley query protocol-parameters \
 
 --shelley-mode           For talking to a node running in Shelley-only mode
@@ -59,7 +59,7 @@ cardano-cli shelley query protocol-parameters \
 --out-file FILE          Optional output file. Default is to write to stdout.
 ```
 
-```
+```text
 cardano-cli shelley transaction calculate-min-fee \
 
   --tx-body-file FILE      Input filepath of the TxBody.
@@ -78,7 +78,7 @@ cardano-cli shelley transaction calculate-min-fee \
 
 A transaction must prove that it has the right to spend its inputs. In the most common case, this means that a transaction must be signed by the signing keys belonging to the payment addresses of the inputs. If a transaction contains certificates, it must additionally be signed by somebody with the right to issue those certificates. For example, a stake address registration certificate must be signed by the signing key of the corresponding stake key pair.
 
-```
+```text
 cardano-cli shelley transaction sign \
 --tx-body-file FILE      Input filepath of the TxBody.
 --signing-key-file FILE  Input filepath of the signing key (one or more).
@@ -91,7 +91,7 @@ cardano-cli shelley transaction sign \
 
 Submitting a transaction means sending the signed transaction through the local node whose Unix domain socket is obtained from the CARDANO\_NODE\_SOCKET\_PATH enviromnent variable.
 
-```
+```text
 cardano-cli shelley transaction submit
 
 --shelley-mode           For talking to a node running in Shelley-only mode
@@ -106,8 +106,6 @@ cardano-cli shelley transaction submit
 --testnet-magic NATURAL  Specify a testnet magic id.
 --tx-file FILE           Filepath of the transaction you intend to submit.
 ```
-
-
 
 {% hint style="info" %}
 [QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)

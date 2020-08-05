@@ -6,13 +6,13 @@ When you start the node using the default configuration, logging is switched on,
 
 We can disable logging completely by setting `TurnOnLoggin` to `False`:
 
-```
+```text
  TurnOnLogging: False
 ```
 
 Log messages come with different severities \(`Debug`, `Info`, `Notice` and `Warning` and `Error`\), and we can specify the _minimal_ severity of messages that will be passed on \(the the console, a file or another logging backend\). Messages with a lower severity will be suppressed. By changing this minimal severity to `Debug`, we will therefore see messages of all severities; by changing it to `Error`, we will only see the most severe messages:
 
-```
+```text
  minSeverity: Debug
 ```
 
@@ -22,7 +22,7 @@ The severity is displayed in the beginning of each log message \(in this example
 
 In addition to _severity_, log messages come with _verbosity_, which can be `MinimalVerbosity`, `NormalVerbosity` or `MaximalVerbosity`. Changing the verbosity will not change _which_ messages will be displayed, but the amount of information contained in each message.
 
-```
+```text
 TracingVerbosity: MinimalVerbosity
 ```
 
@@ -32,7 +32,7 @@ Section `defaultScribes` makes types of scribes available. By default these type
 
 Section `setupScribes` lists those scribes that are actually used. Their kinds must be configured in the `defaultScribes` section before they can be used. For example, if we want logging to go to `logs/mylog.log` in Json-format, we can configure this as follows:
 
-```
+```text
  setupScribes:
    - scKind: FileSK
      scName: "logs/mylog.log"
@@ -45,7 +45,7 @@ The configuration options discussed until now were all global, they effected all
 
 For example, if we want to activate logging for all subsystems related to block fetching, we can achieve this as follows:
 
-```
+```text
  # Trace BlockFetch client.
  TraceBlockFetchClient: True
 
@@ -65,8 +65,6 @@ For example, if we want to activate logging for all subsystems related to block 
 It is also possible to exert more fine-grained control on what information to log, but we will not cover this in this tutorial.
 
 ![Severities](https://github.com/cardano-foundation/stake-pool-school-handbook/tree/3abbeae984eb17aab3778e922956e72ae1cd702a/.gitbook/assets/severity.png)
-
-
 
 {% hint style="info" %}
 [QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)

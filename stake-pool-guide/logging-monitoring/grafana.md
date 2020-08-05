@@ -8,7 +8,7 @@ The Grafana backend has a number of configuration options defined in its config 
 
 Edit grafana.ini For example:
 
-```
+```text
 sudo nano /etc/grafana/grafana.ini
 ```
 
@@ -16,7 +16,7 @@ sudo nano /etc/grafana/grafana.ini
 
 Start Grafana-server with
 
-```
+```text
 sudo /bin/systemctl start grafana-server
 ```
 
@@ -46,7 +46,7 @@ Rename it as **prometheus** \(IOHK dashboard uses this name, this is useful if y
 
 Under HTTP, configure the data source
 
-```
+```text
 URL http://localhost:9090
 Server
 ```
@@ -70,8 +70,6 @@ Enter to your dashboard, and after a few seconds you should see something like t
 ![](../../.gitbook/assets/grafana_dashboard.png)
 
 From here you can configure alerts or change the views on your dashboard.
-
-
 
 {% hint style="info" %}
 [QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)

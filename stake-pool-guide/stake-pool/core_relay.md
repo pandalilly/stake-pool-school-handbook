@@ -13,7 +13,7 @@ Please note that some of these nodes might have been retired already.
 
 Get the configuration files for your core node if you don't have them already, for example
 
-```
+```text
 mkdir pool
 cd pool
 
@@ -24,7 +24,7 @@ wget https://hydra.iohk.io/job/Cardano/cardano-node/cardano-deployment/latest-fi
 
 Make the core node to "talk" only to **YOUR** relay node.
 
-```
+```text
 nano shelley_testnet-topology.json
 
   {
@@ -42,7 +42,7 @@ nano shelley_testnet-topology.json
 
 Make your **relay node** `talk` to your **block-producing** node and **other relays** in the network by editing the `shelley_testnet-topology.json` file:
 
-```
+```text
 nano shelley_testnet-topology.json
 
 {
@@ -65,8 +65,6 @@ nano shelley_testnet-topology.json
   ]
 }
 ```
-
-
 
 {% hint style="info" %}
 [QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)

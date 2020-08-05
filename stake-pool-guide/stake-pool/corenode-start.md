@@ -2,7 +2,7 @@
 
 To start your node as leader candidate you need to add the keys and node certificate to the command that we have used to run the node:
 
-```
+```text
 cardano-node run \
 --topology shelley_testnet-topology.json \
 --database-path /db \
@@ -14,8 +14,6 @@ cardano-node run \
 --shelley-vrf-key vrf.skey \
 --shelley-operational-certificate node.cert
 ```
-
-
 
 {% hint style="info" %}
 [QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)

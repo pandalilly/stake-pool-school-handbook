@@ -8,7 +8,7 @@ Unfortunately, there is a catch: A KES key can only evolve for a certain number 
 
 In order to find out how long one period is and for how long a key can evolve, we can look into the _genesis file_. If that file is called `shelley_testnet-genesis.json`, we can type
 
-```
+```text
 cat shelley_testnet-genesis.json | grep KES
 
 > "slotsPerKESPeriod": 3600,
@@ -19,7 +19,7 @@ and we see that in this example, the key will evolve after each period of 3600 s
 
 Before we can create an operational certificate for our node, we need to figure out the start of the KES validity period, i.e. which KES evolution period we are in. We check the current slot \(assuming our relay node socket file is at `~/cardano-node/relay/db/node.socket`\):
 
-```
+```text
 export CARDANO_NODE_SOCKET_PATH=~/cardano-node/relay/db/node.socket
 cardano-cli shelley query tip --testnet-magic 42
 
@@ -32,14 +32,14 @@ cardano-cli shelley query tip --testnet-magic 42
 
 In this example, we are currently in slot 656260, and we know from the genesis file that one period lasts for 3600 slots. So we calculate the current period by
 
-```
+```text
 expr 656260 / 3600
 > 182
 ```
 
 With this we are able to generate an operational certificate for our stake pool \(assuming the same file names as [here](https://github.com/carloslodelar/SPO/tree/baec64ba9efba39d4b60b7824fb4d7b962f2c3e7/stake-pool-operations/060_node_keys.md)\):
 
-```
+```text
 cardano-cli shelley node issue-op-cert \
     --kes-verification-key-file kes.vkey \
     --cold-signing-key-file cold.skey \
@@ -47,8 +47,6 @@ cardano-cli shelley node issue-op-cert \
     --kes-period 182 \
     --out-file node.cert
 ```
-
-
 
 {% hint style="info" %}
 [QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)
