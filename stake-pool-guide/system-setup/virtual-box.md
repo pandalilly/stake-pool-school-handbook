@@ -20,7 +20,7 @@ When you have finished creating your virtual Machine, open a terminal and run to
 sudo apt install virtualbox-guest-dkms virtualbox-guest-x11 virtualbox-guest-utils
 ```
 
-{% page-ref page="../../lessons/module1/vb.md" %}
+{% page-ref page="../../lessons/lesson-1/vb.md" %}
 
 {% hint style="info" %}
 QUESTIONS AND FEEDBACK
