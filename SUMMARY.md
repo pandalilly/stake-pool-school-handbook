@@ -30,6 +30,7 @@
 * [Topology files](lessons/topology-files.md)
 * [Register stake pool and metadata](lessons/register-stake-pool.md)
 * [Logging and monitoring with prometheus](lessons/logging-prometheus.md)
+* [Grafana dashboard](lessons/grafana.md)
 
 ## STAKE POOL HANDBOOK <a id="stake-pool-guide"></a>
 

@@ -1,6 +1,8 @@
 # Logging and monitoring with prometheus
 
-TO DO: RECORD VIDEOS
+{% embed url="https://youtu.be/VIyDBz7Gd4Y" %}
+
+
 
 
 
