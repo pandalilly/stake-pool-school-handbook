@@ -6,11 +6,10 @@ We need to prepare our topology files so that the relay node talks to other rela
 
 
 
-
-
 {% hint style="info" %}
-[QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)
+ QUESTIONS AND FEEDBACK
 
-If you have any questions or need help, please raise an issue in [Github.](https://github.com/cardano-foundation/stake-pool-school-handbook/issues) We will respond as soon as possible.
+  
+If you have any questions and suggestions while taking the lessons please feel free to ask in the [forum](https://forum.cardano.org/c/english/operators-talk/119) and we will respond as soon as possible.
 {% endhint %}
 
