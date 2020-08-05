@@ -49,10 +49,13 @@ If you do not have access to a computer running Linux \(or VirtualBox\), you can
 
 ![](../../.gitbook/assets/connect2.png)
 
-{% hint style="info" %}
-[QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)
 
-If you have any questions or need help, please raise an issue in [Github.](https://github.com/cardano-foundation/stake-pool-school-handbook/issues) We will respond as soon as possible.
+
+{% hint style="info" %}
+QUESTIONS AND FEEDBACK
+
+  
+If you have any questions and suggestions while taking the lessons please feel free to ask in the [forum](https://forum.cardano.org/c/english/operators-talk/119) and we will respond as soon as possible.
 {% endhint %}
 
 Congratulations! You have now access to a machine running Linux.
