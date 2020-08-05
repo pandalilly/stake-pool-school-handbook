@@ -77,8 +77,9 @@ Build a new transaction with a TTL (time to live) higher than Current Slot. As a
 We encourage you to share your ideas and suggestions on our [dedicated support page](https://iohk.zendesk.com/hc/en-us/categories/900000102203-Shelley-Testnet) so that we can create a library of solutions and support for the tasks that you need to perform.
 
 {% hint style="info" %}
-[QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)
+QUESTIONS AND FEEDBACK
 
-If you have any questions or need help, please raise an issue in [Github.](https://github.com/cardano-foundation/stake-pool-school-handbook/issues) We will respond as soon as possible.
+  
+If you have any questions and suggestions while taking the lessons please feel free to ask in the [forum](https://forum.cardano.org/c/english/operators-talk/119) and we will respond as soon as possible.
 {% endhint %}
 
