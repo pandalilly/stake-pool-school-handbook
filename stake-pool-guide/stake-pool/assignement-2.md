@@ -17,12 +17,13 @@ Try to complete the following tasks in a second server:
 5. Install libsodium 
 6. Create the directory .local/bin and add it to the PATH 
 7. Build the node from source in your new server or Virtual Machine. 
+8. Get Configuration files
 
 Repeat what you learned on [lesson 1](../getting-started/install-node.md) 
 {% endhint %}
 
 {% hint style="danger" %}
-DO NOT START YOUR CORE NODE YET. When you have completed tasks 1-7, continue to [KES-Periods](kes_period.md)
+DO NOT START YOUR CORE NODE YET. When you have completed tasks 1-8, continue to [KES-Periods](kes_period.md)
 {% endhint %}
 
 
