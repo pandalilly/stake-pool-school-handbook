@@ -26,7 +26,12 @@ Repeat what you learned on [lesson 1](../getting-started/install-node.md)
 DO NOT START YOUR CORE NODE YET. When you have completed tasks 1-8, continue to [KES-Periods](kes_period.md)
 {% endhint %}
 
+{% hint style="info" %}
+QUESTIONS AND FEEDBACK
+
+  
+If you have any questions and suggestions while taking the lessons please feel free to ask in the [forum](https://forum.cardano.org/c/english/operators-talk/119) and we will respond as soon as possible.
+{% endhint %}
 
 
-DO NOT START YOUR CORE NODE YET. When you have completed tasks 1-4, continue to [KES-Periods](kes_period.md)
 
