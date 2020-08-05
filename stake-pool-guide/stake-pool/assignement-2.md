@@ -23,7 +23,9 @@ Repeat what you learned on [lesson 1](../getting-started/install-node.md)
 {% endhint %}
 
 {% hint style="danger" %}
-DO NOT START YOUR CORE NODE YET. When you have completed tasks 1-8, continue to [KES-Periods](kes_period.md)
+DO NOT START YOUR CORE NODE YET. 
+
+When you have completed tasks 1-8, continue to [KES-Periods](kes_period.md)
 {% endhint %}
 
 {% hint style="info" %}
