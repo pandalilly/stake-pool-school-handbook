@@ -40,7 +40,7 @@ Get the protocol parameters and save them to `protocol.json` with:
    --out-file protocol.json
 ```
 
-## Determine the TTL \(time to Live\) for the transaction
+## Determine the TTL \(Time To Live\) for the transaction
 
 We need the CURRENT TIP of the blockchain, this is, the height of the last block produced. We are looking for the value of `unSlotNo`
 
@@ -56,7 +56,7 @@ cardano-cli shelley query tip --testnet-magic 42
 
 So at this moment the tip is on block 795346.
 
-To build the transaction we need to specify the **TTL \(Time to live\)**, this is the block height limit for our transaction to be included in a block, if it is not in a block by that slot the transaction will be cancelled.
+To build the transaction we need to specify the **TTL \(Time To Live\)**, this is the block height limit for our transaction to be included in a block, if it is not in a block by that slot the transaction will be cancelled.
 
 From `protocol.json` we know that we have 1 slot per second. Lets say that it will take us 10 minutes to build the transaction, and that we want to give it another 10 minutes window to be included in a block. So we need 20 minutes or 1200 slots. So we add 1200 to the current tip: 795346 + 1200 = 796546. So our TTL is 796546
 
@@ -98,7 +98,7 @@ The transaction needs one \(1\) input: a valid UTXO from `payment.addr`, and two
 
 So we need to pay **167965 lovelace** fee to create this transaction.
 
-Assuming we want to send 100 ADA to **payment2.addr** spending a **UTXO** containing 1,000,000 ada \(1,000,000,000,000 lovelace\), now we need to calculate how much is the **change** to send back to **payment.addr**
+Assuming we want to send 100 ada to **payment2.addr** spending a **UTXO** containing 1,000,000 ada \(1,000,000,000,000 lovelace\), now we need to calculate how much is the **change** to send back to **payment.addr**
 
 ```text
 expr 1000000000000 - 100000000 - 167965
