@@ -7,7 +7,10 @@ description: >-
 
 # Assignement-2
 
-1. Create a second server on AWS or Virtual Machine in Virtual Box. This one will host core node.
+{% hint style="success" %}
+Try to complete the following tasks in a second server:
+
+1. Create a second server on AWS or Virtual Machine in Virtual Box. This one will host your core node and hold your stake pool keys.
 2. Install dependencies
 3. Install cabal 
 4. Install GHC 
@@ -15,9 +18,14 @@ description: >-
 6. Create the directory .local/bin and add it to the PATH 
 7. Build the node from source in your new server or Virtual Machine. 
 
-{% hint style="info" %}
-It is important to make sure that your core and relay nodes run the exact same version of the node. So make sure to update both whenever you have to update to a newer version of the cardano-node.
+Repeat what you learned on [lesson 1](../getting-started/install-node.md) 
 {% endhint %}
 
-1. DO NOT START YOUR CORE NODE YET. When you have completed tasks 1-4, continue to [KES-Periods](kes_period.md)
+{% hint style="danger" %}
+DO NOT START YOUR CORE NODE YET. When you have completed tasks 1-7, continue to [KES-Periods](kes_period.md)
+{% endhint %}
+
+
+
+DO NOT START YOUR CORE NODE YET. When you have completed tasks 1-4, continue to [KES-Periods](kes_period.md)
 
