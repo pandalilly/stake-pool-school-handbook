@@ -71,6 +71,7 @@
   * [Start your core node](stake-pool-guide/stake-pool/corenode-start.md)
   * [Register a Stake Pool with Metadata](stake-pool-guide/stake-pool/register_stakepool.md)
   * [Retiring a Stake Pool](stake-pool-guide/stake-pool/retire_stakepool.md)
+  * [Update operational certificate](stake-pool-guide/stake-pool/operational-certificate.md)
 * [Monitoring the node](stake-pool-guide/logging-monitoring/README.md)
   * [Monitoring a Node with Prometheus](stake-pool-guide/logging-monitoring/prometheus.md)
   * [Adding a Grafana Dashboard to monitor your nodes](stake-pool-guide/logging-monitoring/grafana.md)
