@@ -29,6 +29,8 @@
   * [Stake keys and address](lessons/lesson-3/stake-keys-and-address.md)
   * [Regsiter stake key to the blockchain](lessons/lesson-3/register-stake-key.md)
 * [LESSON 4](lessons/lesson-5/README.md)
+  * [Key Evolving Signature](lessons/lesson-5/kes.md)
+  * [Understanding pledge](lessons/lesson-5/understanding-pledge.md)
   * [Generate stake pool keys](lessons/lesson-5/stakepools-keys.md)
   * [Topology files](lessons/lesson-5/topology-files.md)
   * [Register stake pool and metadata](lessons/lesson-5/register-stake-pool.md)
