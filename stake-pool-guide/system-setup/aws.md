@@ -9,7 +9,7 @@ If you do not have access to a computer running Linux \(or VirtualBox\), you can
 ![](../../.gitbook/assets/ami.png)
 
 * If you already have a running instance, go to step 9.
-* We first make sure to get enough harddrive space \(at least 24GB\). Click on _Volumes_.
+* We must first make sure to get enough harddrive space \(at least 24GB\). Click on _Volumes_.
 
 ![](../../.gitbook/assets/volumes.png)
 
