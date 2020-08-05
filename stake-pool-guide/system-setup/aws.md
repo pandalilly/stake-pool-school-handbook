@@ -17,7 +17,7 @@ If you do not have access to a computer running Linux \(or VirtualBox\), you can
 
 ![](../../.gitbook/assets/volume_actions.png)
 
-* In the _Modify Volume_ diaglog, select a size of 24 and click _Modify_, then confirm in the next dialog.
+* In the _Modify Volume_ dialog, select a size of 24 and click _Modify_, then confirm in the next dialog.
 
 ![](../../.gitbook/assets/modify_volume.png)
 
