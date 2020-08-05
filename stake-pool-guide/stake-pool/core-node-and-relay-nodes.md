@@ -10,9 +10,12 @@ Each node must run in its own dedicated machine or server.
 
 
 
-{% hint style="info" %}
-[QUESTIONS AND FEEDBACK](https://github.com/carloslodelar/SPO/issues)
 
-If you have any questions or need help, please raise an issue in [Github.](https://github.com/cardano-foundation/stake-pool-school-handbook/issues) We will respond as soon as possible.
+
+{% hint style="info" %}
+QUESTIONS AND FEEDBACK
+
+  
+If you have any questions and suggestions while taking the lessons please feel free to ask in the [forum](https://forum.cardano.org/c/english/operators-talk/119) and we will respond as soon as possible.
 {% endhint %}
 
