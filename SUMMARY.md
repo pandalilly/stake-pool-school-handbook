@@ -11,6 +11,7 @@
 * [INTRODUCTION](lessons/introduction/README.md)
   * [Introduction to the course](lessons/introduction/welcome-to-the-course.md)
   * [Syllabus](lessons/introduction/syllabus.md)
+  * [Why Cardano ?](lessons/introduction/why-cardano.md)
   * [About Cardano](lessons/introduction/about-cardano.md)
   * [Introduction to Cardano](lessons/introduction/introduction-to-cardano.md)
   * [Ouroboros Protocol](lessons/introduction/ouroboros.md)
