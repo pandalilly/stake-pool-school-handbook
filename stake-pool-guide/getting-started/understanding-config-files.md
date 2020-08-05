@@ -135,7 +135,7 @@ Here is a brief description of each parameter. You can learn more in the [spec](
 | epochLength | Number of slots in an epoch. |
 | staking | Initial delegation |
 | slotsPerKESPeriod | Number of slots in an KES period |
-| slotLength | in seconds |
+| slotLength | In seconds |
 | maxKESEvolutions | The maximum number of time a KES key can be evolved before a pool operator must create a new operational certificate |
 | securityParam | Security parameter k |
 
@@ -149,7 +149,7 @@ This file has **4** sections that allow you to have full control on what your no
 
 ### 1 Basic Node Configuration.
 
-First section relates the basic node configuration parameters. Make sure you have to `TPraos`as the protocol, the correct path to the `shelley_testnet-genesis.json` file, `RequiresMagic`for its use in a testnet. Note that in this example we are using the SimpleView. This will send the output to `stdout`. Other option is `LiveView` which uses a terminal multiplexer to generate a fancy view. We will cover this topic later.
+The first section relates to the basic node configuration parameters. Make sure you have to `TPraos`as the protocol, the correct path to the `shelley_testnet-genesis.json` file, `RequiresMagic`for its use in a testnet. Note that in this example we are using the SimpleView. This will send the output to `stdout`. The other option is `LiveView` which uses a terminal multiplexer to generate a fancy view. We will cover this topic later.
 
 ```text
 {
@@ -172,15 +172,15 @@ This protocol version number gets used by block producing nodes as part of the s
 
 ### 3 Tracing
 
-`Tracers` tell your node what information you are interested in when logging. Like switches that you can turn ON or OFF according the type and quantity of information that you are interesetd in. This provides fairly coarse grained control, but it is relatively efficient at filtering out unwanted trace output.
+`Tracers` tell your node what information you are interested in when logging: like switches that you can turn ON or OFF according the type and quantity of information that you are interesetd in. This provides fairly coarse grained control, but it is relatively efficient at filtering out unwanted trace output.
 
-The node can run in either the `SimpleView` or `LiveView`. The `SimpleView` just uses standard output, optionally with log output. The `LiveView` is a text console with a live view of various node metrics.
+The node can run in either the `SimpleView` or `LiveView`. The `SimpleView` uses standard output, optionally with log output. The `LiveView` is a text console with a live view of various node metrics.
 
 `TurnOnLogging`: Enbles or disables logging overall.
 
-`TurnOnLogMetrics`: Enable the collection of various OS metrics such as memory and CPU use. These metrics can be directed to the logs or monitoring backends.
+`TurnOnLogMetrics`: Enables the collection of various OS metrics such as memory and CPU use. These metrics can be directed to the logs or monitoring backends.
 
-`setupBackends`, `defaultBackends`, `hasEKG`and `hasPrometheus`: The system supports a number of backends for logging and monitoring. This settings list the the backends available to use in the configuration. The logging backend is called `Katip`. Also enable the EKG backend if you want to use the EKG or Prometheus monitoring interfaces.
+`setupBackends`, `defaultBackends`, `hasEKG`and `hasPrometheus`: The system supports a number of backends for logging and monitoring. This setting lists the backends available to use in the configuration. The logging backend is called `Katip`. Also enable the EKG backend if you want to use the EKG or Prometheus monitoring interfaces.
 
 `setupScribes` and `defaultScribes`: For the Katip logging backend we must set up outputs \(called scribes\) The available types of scribe are:
 
@@ -260,7 +260,7 @@ The node can run in either the `SimpleView` or `LiveView`. The `SimpleView` just
 
 It is also possible to have more fine grained control over filtering of trace output, and to match and route trace output to particular backends. This is less efficient than the coarse trace filters above but provides much more precise control. `options`:
 
-`mapBackends`This routes metrics matching specific names to particular backends. This overrides the defaultBackends listed above. And note that it is an **override** and not an extension so anything matched here will not go to the default backend, only to the explicitly listed backends.
+`mapBackends` This routes metrics matching specific names to particular backends. This overrides the defaultBackends listed above. Note that it is an **override** and not an extension so anything matched here will not go to the default backend, only to the explicitly listed backends.
 
 `mapSubtrace` This section is more expressive, we are working on its documentation.
 
