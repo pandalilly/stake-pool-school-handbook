@@ -12,7 +12,7 @@ We will learn how to install cardano-node and all its dependencies. This assumes
 
 
 
-**Please find the written tutorial to complete this task here:** [**INSTALLING CARDANO-NODE**](../stake-pool-guide/getting-started/install-node.md)\*\*\*\*
+**Please find the written tutorial to complete this task here:** [**INSTALLING CARDANO-NODE**](../../stake-pool-guide/getting-started/install-node.md)\*\*\*\*
 
 
 
