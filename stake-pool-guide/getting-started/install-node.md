@@ -189,3 +189,12 @@ cabal install cardano-node cardano-cli
 
 _Note:_ It might be necessary to delete the `db`-folder \(the database-folder\) before running an updated version of the node.
 
+
+
+{% hint style="info" %}
+QUESTIONS AND FEEDBACK
+
+  
+If you have any questions and suggestions while taking the lessons please feel free to ask in the [forum](https://forum.cardano.org/c/english/operators-talk/119) and we will respond as soon as possible.
+{% endhint %}
+
