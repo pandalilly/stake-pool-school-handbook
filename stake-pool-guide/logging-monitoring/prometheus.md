@@ -25,7 +25,7 @@ Then add a new rule for "Custom TCP", port range 12789, source "Anywhere".
    \(Using `0.0.0.0` as host will bind to all provided interfaces, all of which you can list with `ifconfig`. You can be more selective if you want and provide a specific IP-address instead.\)
 
 2. We restart the node, and it will now make Prometheus metrics available at port 12789 \(or whatever port you specified in `shelley_testnet-config.json`\).
-3. You can get the best out of prometheus if you have both Prometheus on your local machine or monitoring server and Prometheus Node Exporter on your node's server. How to do this depends on your platform and setup, but you can find documentation:
+3. You can get the best out of Prometheus if you have both Prometheus on your local machine or monitoring server and Prometheus Node Exporter on your node's server. How to do this depends on your platform and setup, but you can find documentation:
    * [Prometheus](https://prometheus.io/docs/prometheus/latest/getting_started/).
    * [Node exporter](https://prometheus.io/docs/guides/node-exporter/)
 4. Prometheus needs to be configured to monitor your Cardano Node. A minimalistic configuration file doing this could look like this:
