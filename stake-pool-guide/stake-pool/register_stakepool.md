@@ -25,7 +25,7 @@ At this moment we have:
 | `vrf.vkey` | VRF verification key |
 | `vrf.skey` | VRF signing key |
 
-Registering your stake pool requires:
+To register your stake pool, you must:
 
 * Create JSON file with your metadata and store it in the node and in a url you maintain.
 * Get the hash of your JSON file
@@ -35,7 +35,7 @@ Registering your stake pool requires:
 * Submit a PR with pool metadata \(Temporary step until DB-sync is upgraded\)
 
 {% hint style="info" %}
-**WARNING:** Generating the **stake pool registration certificate** and the **delegation certificate** requires the **cold keys** So, when doing this on mainnet you may want to generate these certificates in your local machine taking the proper security measures to avoid exposing your cold keys to the internet.
+**WARNING:** Generating the **stake pool registration certificate** and the **delegation certificate** requires the **cold keys** So, when doing this on mainnet you may want to generate these certificates in your local machine, taking the proper security measures to avoid exposing your cold keys to the internet.
 {% endhint %}
 
 ## Create a JSON file with your pool's metadata
@@ -55,7 +55,7 @@ You can use a GIST in github, just make sure that the URL is less than 65 charac
 
 ## Get the hash of your file:
 
-This validates that the JSON fits the required schema, if it does, you will get the hash of your file.
+This validates that the JSON fits the required schema; if it does, you will get the hash of your file.
 
 ```text
 cardano-cli shelley stake-pool metadata-hash --pool-metadata-file testPool.json
@@ -127,7 +127,7 @@ cardano-cli shelley stake-address delegation-certificate \
 --out-file delegation.cert
 ```
 
-This creates a delegation certificate which delegates funds from all stake addresses associated with key `stake.vkey` to the pool belonging to cold key `cold.vkey`. If we had used different staking keys for the pool owners in the first step, we would need to create delegation certificates for all of them instead.
+This creates a delegation certificate which delegates fund from all stake addresses associated with key `stake.vkey` to the pool belonging to cold key `cold.vkey`. If we had used different staking keys for the pool owners in the first step, we would need to create delegation certificates for all of them instead.
 
 ## Submit the pool certificate and delegation certificate to the blockchain
 
