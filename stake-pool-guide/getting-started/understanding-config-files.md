@@ -20,7 +20,7 @@ This means that your node will contact node at ip `x.x.x.x` on `port 3001`.
 
 `valency` tells the node how many connections your node should have. It only has an effect for dns addresses. If a dns address is given, valency governs to how many resolved ip addresses should we maintain active \(hot\) connection; for ip addresses, valency is used as a boolean value, where `0` means to ignore the address.
 
-Your **block-producing** node must **ONLY** talk to your **relay nodes**, and the relay node should talk to other relay nodes in the network. Go to our telegram channel to find out IP addresses and ports of peers.
+Your **block-producing** node must **ONLY** talk to your **relay nodes**, and the relay node should talk to other relay nodes in the network. Go to our [**forum**](https://forum.cardano.org/c/english/operators-talk/119) channel to find out IP addresses and ports of peers.
 
 ## The genesis.json file
 
