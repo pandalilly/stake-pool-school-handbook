@@ -115,7 +115,7 @@ cardano-cli shelley transaction submit \
 --testnet-magic 42
 ```
 
-Your stake key is now registered in the blockchain.
+Your stake key is now registered on the blockchain.
 
 
 
