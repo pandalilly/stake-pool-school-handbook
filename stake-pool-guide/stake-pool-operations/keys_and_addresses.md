@@ -68,7 +68,13 @@ you should see something like this:
 ----------------------------------------------------------------------------------
 ```
 
+{% hint style="danger" %}
+WARNING
 
+**For ease of use, and for this course only, we will keep our Cardano Testnet payment.skey and payment.vkey files in the server. But this is not SECURE.   
+  
+In a real life scenario \(mainnet\),  you need to have your keys under cold storage.** 
+{% endhint %}
 
 {% hint style="info" %}
 QUESTIONS AND FEEDBACK
