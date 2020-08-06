@@ -1,15 +1,19 @@
 # Generate your stake pool keys
 
-{% hint style="info" %}
+{% hint style="danger" %}
+### WARNING: 
+
 ### Basic core node firewall configuration:
 
 * Make sure you can only login with SSH Keys, not password.
+* Make sure you cannot login as root
 * Make sure to setup SSH connections in a port different than the default 22
 * Make sure to configure the firewall to only allow connections from your relay nodes by setting up their ip addresses.
 
 ### Basic relay node firewall configuration:
 
 * Make sure you can only login with SSH Keys, not password.
+* Make sure you cannot login as root
 * Make sure to setup SSH connections in a port different than the default 22.
 * Make sure you only have the strictly necessary ports opened.
 {% endhint %}
@@ -109,6 +113,12 @@ cardano-cli shelley node issue-op-cert \
 ## Move the cold keys to secure storage
 
 The best place for your cold keys is a **SECURE USB** or other **SECURE EXTERNAL DEVICE**, not a computer with internet access.
+
+{% hint style="danger" %}
+**WARNING**
+
+### On a real life scenario you would generate your cold keys in a secure machine, without internet access. And only upload the operational certificate to the server. 
+{% endhint %}
 
 ### Copy the cold keys from your server to your local machine and from there to COLD storage.
 

@@ -40,20 +40,17 @@ Now that we have a stake address, it is time to regenerate a payment address. Th
  --testnet-magic 1097911063
 ```
 
-
-
 {% hint style="danger" %}
 WARNING
 
-**For ease of use, and for this course only, we will keep our Cardano Testnet key files in the server. But this is NOT SECURE.   
-  
-In a real life scenario \(MAINNET\),  you need to have your keys under cold storage.** 
+\*\*For ease of use, and for this course only, we will keep our Cardano Testnet key files in the server. But this is NOT SECURE.
+
+In a real life scenario \(MAINNET\), you need to have your keys under cold storage.\*\*
 {% endhint %}
 
 {% hint style="info" %}
 QUESTIONS AND FEEDBACK
 
-  
 If you have any questions and suggestions while taking the lessons please feel free to ask in the [forum](https://forum.cardano.org/c/english/operators-talk/119) and we will respond as soon as possible.
 {% endhint %}
 
