@@ -22,7 +22,7 @@ wget https://hydra.iohk.io/job/Cardano/cardano-node/cardano-deployment/latest-fi
 wget https://hydra.iohk.io/job/Cardano/cardano-node/cardano-deployment/latest-finished/download/1/shelley_testnet-topology.json
 ```
 
-Make the core node to "talk" only to **YOUR** relay node.
+Make the core node "talk" only to **YOUR** relay node.
 
 ```text
 nano shelley_testnet-topology.json
