@@ -1,7 +1,7 @@
 # Assignment 1
 
 {% hint style="success" %}
-Try to complete this task from what you have learned
+Try to complete this task from what you have learned so far:
 
 Create a transaction with only **one** input and **one** output sending all the funds to paymentwithstake.addr
 {% endhint %}
