@@ -2,7 +2,7 @@
 description: ABOUT
 ---
 
-# Stake pool initiative
+# Stake Pool School
 
 **WELCOME !**
 

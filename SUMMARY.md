@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Stake pool initiative](README.md)
+* [Stake Pool School](README.md)
 
 ## QUESTIONS, FEEDBACK &  HELP <a id="about-the-stake-pool-initiative"></a>
 

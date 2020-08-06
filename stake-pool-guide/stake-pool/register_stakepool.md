@@ -240,12 +240,9 @@ cardano-cli shelley query ledger-state --testnet-magic 42 \
 
 which should return a non-empty string if your poolID is located in the ledger. You can then then head over to a pool listing website such as [https://ff.pooltool.io/](https://ff.pooltool.io/) and \(providing it is up and running and showing a list of registered stake pools\) you should hopefully be able to find your pool in there by searching using your poolID, and subsequently claiming it \(might require registration on the website\) and giving it a customized name.
 
-
-
 {% hint style="info" %}
 QUESTIONS AND FEEDBACK
 
-  
 If you have any questions and suggestions while taking the lessons please feel free to ask in the [forum](https://forum.cardano.org/c/english/operators-talk/119) and we will respond as soon as possible.
 {% endhint %}
 

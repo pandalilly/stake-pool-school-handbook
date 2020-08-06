@@ -184,12 +184,9 @@ We must give it some time to get incorporated into the blockchain, but eventuall
     > b64ae44e1195b04663ab863b62337e626c65b0c9855a9fbb9ef4458f81a6f5ee     0         100000000
 ```
 
-
-
 {% hint style="info" %}
 QUESTIONS AND FEEDBACK
 
-  
 If you have any questions and suggestions while taking the lessons please feel free to ask in the [forum](https://forum.cardano.org/c/english/operators-talk/119) and we will respond as soon as possible.
 {% endhint %}
 
