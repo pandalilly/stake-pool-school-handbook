@@ -17,12 +17,12 @@
 ## Creating stake pool keys
 
 {% hint style="info" %}
-**WARNING:** For Mainnet, you may want to use your **local machine** for this process \(assuming you have cardano-node and cardano-cli on it\). Make sure you are not online until you have put your **cold keys** in a secure storage and deleted the files from you local machine.
+**WARNING:** For Mainnet, you may want to use your **local machine** for this process \(assuming you have cardano-node and cardano-cli on it\). Make sure you are not online until you have put your **cold keys** in a secure storage and deleted the files from your local machine.
 {% endhint %}
 
 The **core node** needs:
 
-* **Cold** key pair,
+* **Cold** Key pair,
 * **VRF** Key pair,
 * **KES** Key pair,
 * **Operational Certificate**
