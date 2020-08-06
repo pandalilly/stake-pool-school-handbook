@@ -99,7 +99,7 @@ expr 656260 / 3600
 > 182
 ```
 
-{% hint style="info" %}
+{% hint style="warning" %}
 **NOTE:** `slotNo` and `Kes-period` will be different when you run this commands. So make sure to calculate them yourself.
 {% endhint %}
 
