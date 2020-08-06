@@ -66,7 +66,7 @@ cardano-cli shelley node key-gen-KES \
 ### Generate the Operational Certificate
 
 {% hint style="warning" %}
-You need to calculate the KES period yourself. If you copy-paste the commands bellow they will fail. 
+You need to calculate the KES period yourself.
 {% endhint %}
 
 We need to know the slots per KES period, we get it from the genesis file:
