@@ -16,6 +16,8 @@
 * Make sure you cannot login as root
 * Make sure to setup SSH connections in a port different than the default 22.
 * Make sure you only have the strictly necessary ports opened.
+
+[See Firewall ](../../additional-material/firewall.md)Additional Material 
 {% endhint %}
 
 ## Creating stake pool keys
