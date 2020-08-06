@@ -46,7 +46,7 @@ cardano-cli shelley transaction calculate-min-fee \
 --tx-out-count 1 \
 --witness-count 1 \
 --byron-witness-count 0 \
---testnet-magic 42 \
+--testnet-magic 1097911063 \
 --protocol-params-file protocol.json
 
 > 171485
@@ -67,7 +67,7 @@ Query the UTXO:
 ```text
     cardano-cli shelley query utxo \
         --address $(cat payment.addr) \
-        --testnet-magic 42
+        --testnet-magic 1097911063
 
     >                            TxHash                                 TxIx        Lovelace
     > ----------------------------------------------------------------------------------------
@@ -103,7 +103,7 @@ cardano-cli shelley transaction sign \
 --tx-body-file tx.raw \
 --signing-key-file payment.skey \
 --signing-key-file stake.skey \
---testnet-magic 42 \
+--testnet-magic 1097911063 \
 --out-file tx.signed
 ```
 
@@ -112,7 +112,7 @@ And submit it:
 ```text
 cardano-cli shelley transaction submit \
 --tx-file tx.signed \
---testnet-magic 42
+--testnet-magic 1097911063
 ```
 
 Your stake key is now registered on the blockchain.

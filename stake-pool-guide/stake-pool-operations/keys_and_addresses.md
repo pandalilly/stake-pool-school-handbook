@@ -37,7 +37,7 @@ We then use `payment.vkey` and `stake.vkey` to create our `payment address`:
  cardano-cli shelley address build \
  --payment-verification-key-file payment.vkey \
  --out-file payment.addr \
- --testnet-magic 42
+ --testnet-magic 1097911063
 ```
 
 This created the file payment.addr that is already associated with our stake keys:
@@ -58,7 +58,7 @@ make sure that your node is running. Then use `cardano-cli shelley query utxo` t
 ```text
 cardano-cli shelley query utxo \
 --address $(cat payment.addr) \
---testnet-magic 42
+--testnet-magic 1097911063
 ```
 
 you should see something like this:

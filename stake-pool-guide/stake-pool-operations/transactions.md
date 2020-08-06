@@ -16,7 +16,7 @@ To generate **payment2.addr** we can use the same stake key pair that we already
 cardano-cli shelley address build \
 --payment-verification-key-file payment2.vkey \
 --out-file payment2.addr \
---testnet-magic 42
+--testnet-magic 1097911063
 ```
 
 Let's send 100 ada from `payment.addr` to `payment2.addr`
@@ -36,7 +36,7 @@ Get the protocol parameters and save them to `protocol.json` with:
 
 ```text
    cardano-cli shelley query protocol-parameters \
-   --testnet-magic 42 \
+   --testnet-magic 1097911063 \
    --out-file protocol.json
 ```
 
@@ -45,7 +45,7 @@ Get the protocol parameters and save them to `protocol.json` with:
 We need the CURRENT TIP of the blockchain, this is, the height of the last block produced. We are looking for the value of `unSlotNo`
 
 ```text
-cardano-cli shelley query tip --testnet-magic 42
+cardano-cli shelley query tip --testnet-magic 1097911063
 
 {
     "blockNo": 16829,
@@ -87,14 +87,14 @@ The transaction needs one \(1\) input: a valid UTXO from `payment.addr`, and two
    --tx-out-count 2 \
    --witness-count 1 \
    --byron-witness-count 0 \
-   --testnet-magic 42 \
+   --testnet-magic 1097911063 \
    --protocol-params-file protocol.json
 
 
    > 167965
 ```
 
-\(`--testnet-magic 42` identifies the Shelley Testnet. Other testnets will use other numbers, and mainnet uses `--mainnet` instead.\)
+\(`--testnet-magic 1097911063` identifies the Shelley Testnet. Other testnets will use other numbers, and mainnet uses `--mainnet` instead.\)
 
 So we need to pay **167965 lovelace** fee to create this transaction.
 
@@ -111,7 +111,7 @@ We need the transaction hash and index of the **UTXO** we want to spend:
 ```text
 cardano-cli shelley query utxo \
 --address $(cat payment.addr) \
---testnet-magic 42
+--testnet-magic 1097911063
 
 >                            TxHash                                 TxIx        Lovelace
 > ----------------------------------------------------------------------------------------
@@ -142,7 +142,7 @@ Sign the transaction with the signing key **payment.skey** and save the signed t
 cardano-cli shelley transaction sign \
 --tx-body-file tx.raw \
 --signing-key-file payment.skey \
---testnet-magic 42 \
+--testnet-magic 1097911063 \
 --out-file tx.signed
 ```
 
@@ -159,7 +159,7 @@ and submit the transaction:
 ```text
 cardano-cli shelley transaction submit \
         --tx-file tx.signed \
-        --testnet-magic 42
+        --testnet-magic 1097911063
 ```
 
 ## Check the balances
@@ -169,7 +169,7 @@ We must give it some time to get incorporated into the blockchain, but eventuall
 ```text
     cardano-cli shelley query utxo \
         --address $(cat payment.addr) \
-        --testnet-magic 42
+        --testnet-magic 1097911063
 
     >                            TxHash                                 TxIx        Lovelace
     > ----------------------------------------------------------------------------------------
@@ -177,7 +177,7 @@ We must give it some time to get incorporated into the blockchain, but eventuall
 
     cardano-cli shelley query utxo \
         --address $(cat payment2.addr) \
-        --testnet-magic 42
+        --testnet-magic 1097911063
 
     >                            TxHash                                 TxIx        Lovelace
     > ----------------------------------------------------------------------------------------

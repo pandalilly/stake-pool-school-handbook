@@ -76,7 +76,7 @@ cardano-cli shelley stake-pool registration-certificate \
 --pool-margin 0.04 \
 --pool-reward-account-verification-key-file stake.vkey \
 --pool-owner-stake-verification-key-file stake.vkey \
---testnet-magic 42 \
+--testnet-magic 1097911063 \
 --pool-relay-ipv4 123.121.123.121 \
 --pool-relay-port 3000 \
 --metadata-url https://git.io/JJWdJ \
@@ -153,7 +153,7 @@ cardano-cli shelley transaction calculate-min-fee \
 --tx-body-file tx.raw \
 --tx-in-count 1 \
 --tx-out-count 1 \
---testnet-magic 42 \
+--testnet-magic 1097911063 \
 --witness-count 1 \
 --byron-witness-count 0 \
 --protocol-params-file protocol.json
@@ -207,7 +207,7 @@ cardano-cli shelley transaction sign \
 --signing-key-file payment.skey \
 --signing-key-file stake.skey \
 --signing-key-file cold.skey \
---testnet-magic 42 \
+--testnet-magic 1097911063 \
 --out-file tx.signed
 ```
 
@@ -216,7 +216,7 @@ And submit:
 ```text
 cardano-cli shelley transaction submit \
 --tx-file tx.signed \
---testnet-magic 42
+--testnet-magic 1097911063
 ```
 
 To verify that your stake pool registration was indeed successful, you can perform the following steps:
@@ -228,13 +228,13 @@ cardano-cli shelley stake-pool id --verification-key-file cold.vkey
 will output your poolID. You can then check for the presence of your poolID in the network ledger state, with the following command:
 
 ```text
-cardano-cli shelley query ledger-state --testnet-magic 42 | grep publicKey | grep <poolId>
+cardano-cli shelley query ledger-state --testnet-magic 1097911063 | grep publicKey | grep <poolId>
 ```
 
 or
 
 ```text
-cardano-cli shelley query ledger-state --testnet-magic 42 \
+cardano-cli shelley query ledger-state --testnet-magic 1097911063 \
 | jq '._delegationState._pstate._pParams.<poolid>'
 ```
 

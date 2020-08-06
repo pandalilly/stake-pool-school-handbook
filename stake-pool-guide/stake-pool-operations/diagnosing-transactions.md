@@ -16,14 +16,14 @@ f5296e996940b1c81f781594293d423b4250a454f5832b0740a923f74460d34
 
 **Solution**: Make sure that you are using a correct UTXO. You can query this with:
 
-\`\`\`$ cardano-cli shelley query utxo --address $\(cat payment.addr\) --testnet-magic 42
+\`\`\`$ cardano-cli shelley query utxo --address $\(cat payment.addr\) --testnet-magic 1097911063
 
 ```text
 **Problem**: ExpiredUTxO
 
 ```$ cardano-cli shelley transaction submit \
 > --tx-file tx001.signed \
-> --testnet-magic 42
+> --testnet-magic 1097911063
 ```
 
 \`\`\`&gt; ApplyTxError \[LedgerFailure \(UtxowFailure \(UtxoFailure\(ExpiredUTxO {pfUTXOttl = SlotNo {unSlotNo = 123456}, pfUTXOcurrentSlot = SlotNo {unSlotNo = 123457}}\)\)\)\]
@@ -39,7 +39,7 @@ Build a new transaction with a TTL (time to live) higher than Current Slot. As a
 
 ```$ cardano-cli shelley transaction submit \
 > --tx-file tx001.signed \
-> --testnet-magic 42
+> --testnet-magic 1097911063
 ```
 
 \`\`\`ApplyTxError \[LedgerFailure \(UtxowFailure \(UtxoFailure \(FeeTooSmallUTxO \(Coin 172409\) \(Coin 167965\)\)\)\),LedgerFailure \(UtxowFailure \(UtxoFailure \(ValueNotConservedUTxO \(Coin 1000000000\)\(Coin 999999998\)\)\)\)\]
@@ -53,7 +53,7 @@ Build a new transaction with a TTL (time to live) higher than Current Slot. As a
 
 ```$ cardano-cli shelley transaction submit \
 --tx-file tx001.signed \
---testnet-magic 42
+--testnet-magic 1097911063
 ```
 
 \`\`\`&gt; ApplyTxError \[LedgerFailure \(UtxowFailure \(UtxoFailure \(BadInputsUTxO \(fromList \[TxIn \(TxId {\_TxId =f5296e996940b1c81f781594293d423b4250a454f5832b0740a923f74460d34e}\) \]\)\)\)\)
@@ -65,7 +65,7 @@ Build a new transaction with a TTL (time to live) higher than Current Slot. As a
 
 ```$ cardano-cli shelley query utxo \
  --address $(cat payment.addr) \
- --testnet-magic 42
+ --testnet-magic 1097911063
 ```
 
 ## \`\`\`&gt;  TxHash                                    TxIx      Lovelace

@@ -22,7 +22,7 @@ So one epoch lasts for 21600 slots. We get the current slot by querying the tip:
 
 ```text
 export CARDANO_NODE_SOCKET_PATH=relay-db/node-socket
-cardano-cli shelley query tip --testnet-magic 42
+cardano-cli shelley query tip --testnet-magic 1097911063
 
 > Tip (SlotNo {unSlotNo = 856232}) ...
 ```
@@ -40,7 +40,7 @@ We can look up `eMax` by querying the current protocol parameters:
 
 ```text
 cardano-cli shelley query protocol-parameters \
---testnet-magic 42 \
+--testnet-magic 1097911063 \
 --out-file protocol.json
 
 cat protocol.json | grep eMax
@@ -85,7 +85,7 @@ cardano-cli shelley transaction calculate-min-fee \
 --tx-out-count 1 \
 --witness-count 1 \
 --byron-witness-count 0 \
---testnet-magic 42 \
+--testnet-magic 1097911063 \
 --protocol-params-file protocol.json
 ```
 
@@ -98,7 +98,7 @@ We query our address for a suitable UTxO to use as input:
 ```text
 cardano-cli shelley query utxo \
 --address $(cat payment.addr) \
---testnet-magic 42
+--testnet-magic 1097911063
 
 
 
@@ -135,7 +135,7 @@ cardano-cli shelley transaction sign \
     --tx-body-file tx.raw \
     --signing-key-file payment.skey \
     --signing-key-file cold.skey \
-    --testnet-magic 42 \
+    --testnet-magic 1097911063 \
     --out-file tx.signed
 ```
 
@@ -144,7 +144,7 @@ And submit to the blockchain:
 ```text
 cardano-cli shelley transaction submit \
     --tx-file tx.signed \
-    --testnet-magic 42
+    --testnet-magic 1097911063
 ```
 
 And we are done. The pool will retire at the end of epoch 40. If we change our mind, we can create and submit a new registration certificate before epoch 41, which will then overrule the deregistration certificate.

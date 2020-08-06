@@ -21,7 +21,7 @@ Before we can create an operational certificate for our node, we need to figure 
 
 ```text
 export CARDANO_NODE_SOCKET_PATH=~/cardano-node/relay/db/node.socket
-cardano-cli shelley query tip --testnet-magic 42
+cardano-cli shelley query tip --testnet-magic 1097911063
 
 {
     "blockNo": 27470,

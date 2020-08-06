@@ -18,7 +18,7 @@ Finally, we can create our stake address. This address **CAN'T** receive payment
  cardano-cli shelley stake-address build \
  --stake-verification-key-file stake.vkey \
  --out-file stake.addr \
- --testnet-magic 42
+ --testnet-magic 1097911063
 ```
 
 This created the file stake.addr, let's check its content:
@@ -37,7 +37,7 @@ Now that we have a stake address, it is time to regenerate a payment address. Th
  --payment-verification-key-file payment.vkey \
  --stake-verification-key-file stake.vkey \
  --out-file paymentwithstake.addr \
- --testnet-magic 42
+ --testnet-magic 1097911063
 ```
 
 

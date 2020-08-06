@@ -75,7 +75,7 @@ Then we need the current tip of the blockchain:
 We can use your relay node to query the tip:
 
 ```text
-cardano-cli shelley query tip --testnet-magic 42
+cardano-cli shelley query tip --testnet-magic 1097911063
 
 {
     "blockNo": 27470,
