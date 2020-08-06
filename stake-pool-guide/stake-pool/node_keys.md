@@ -20,8 +20,8 @@
 
 ## Creating stake pool keys
 
-{% hint style="info" %}
-**WARNING:** For Mainnet, you may want to use your **local machine** for this process \(assuming you have cardano-node and cardano-cli on it\). Make sure you are not online until you have put your **cold keys** in a secure storage and deleted the files from your local machine.
+{% hint style="danger" %}
+**WARNING:** For Mainnet, you may want to use your **local machine** for this process. Make sure you are not online until you have put your **cold keys** in a secure storage and deleted the files from your local machine.
 {% endhint %}
 
 The **core node** needs:
@@ -113,12 +113,6 @@ cardano-cli shelley node issue-op-cert \
 ## Move the cold keys to secure storage
 
 The best place for your cold keys is a **SECURE USB** or other **SECURE EXTERNAL DEVICE**, not a computer with internet access.
-
-{% hint style="danger" %}
-**WARNING**
-
-### On a real life scenario you would generate your cold keys in a secure machine, without internet access. And only upload the operational certificate to the server. 
-{% endhint %}
 
 ### Copy the cold keys from your server to your local machine and from there to COLD storage.
 
