@@ -1,5 +1,13 @@
 # Generate stake keys and address
 
+{% hint style="danger" %}
+**WARNING**
+
+**For ease of use, and for this course only, we will keep our Cardano Testnet key files in the server. But this is NOT SECURE.**
+
+**In a real life scenario \(MAINNET\), you need to have your keys under cold storage.**
+{% endhint %}
+
 ## Stake key pair
 
 Now let us create our _stake key pair_ :
@@ -39,14 +47,6 @@ Now that we have a stake address, it is time to regenerate a payment address. Th
  --out-file paymentwithstake.addr \
  --testnet-magic 1097911063
 ```
-
-{% hint style="danger" %}
-WARNING
-
-\*\*For ease of use, and for this course only, we will keep our Cardano Testnet key files in the server. But this is NOT SECURE.
-
-In a real life scenario \(MAINNET\), you need to have your keys under cold storage.\*\*
-{% endhint %}
 
 {% hint style="info" %}
 QUESTIONS AND FEEDBACK

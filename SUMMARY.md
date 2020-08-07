@@ -55,6 +55,7 @@
 * [Start your node](stake-pool-guide/start_your_nodes/README.md)
   * [Start your node](stake-pool-guide/start_your_nodes/start-your-node.md)
 * [Transactions](stake-pool-guide/stake-pool-operations/README.md)
+  * [Untitled](stake-pool-guide/stake-pool-operations/untitled.md)
   * [UTxO model](stake-pool-guide/stake-pool-operations/utxo-model.md)
   * [Generate payment keys and addresses](stake-pool-guide/stake-pool-operations/keys_and_addresses.md)
   * [Using the faucet](stake-pool-guide/stake-pool-operations/using-the-faucet.md)

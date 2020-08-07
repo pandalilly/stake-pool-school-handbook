@@ -4,6 +4,14 @@ We need to create two sets of keys and addresses. One set to control our funds \
 
 Let's produce our cryptographic keys first, as we will need them to later create our addresses:
 
+{% hint style="danger" %}
+**WARNING**
+
+**For ease of use, and for this course only, we will keep our Cardano Testnet key files in the server. But this is NOT SECURE.**
+
+**In a real life scenario \(MAINNET\), you need to have your keys under cold storage.**
+{% endhint %}
+
 ## Payment key pair
 
 Generate a _payment key pair_:
@@ -68,13 +76,7 @@ you should see something like this:
 ----------------------------------------------------------------------------------
 ```
 
-{% hint style="danger" %}
-WARNING
 
-\*\*For ease of use, and for this course only, we will keep our Cardano Testnet key files in the server. But this is NOT SECURE.
-
-In a real life scenario \(MAINNET\), you need to have your keys under cold storage.\*\*
-{% endhint %}
 
 {% hint style="info" %}
 QUESTIONS AND FEEDBACK
