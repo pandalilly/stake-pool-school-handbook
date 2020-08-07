@@ -39,7 +39,8 @@
 * [LESSON 5](lessons/lesson5/README.md)
   * [Logging and monitoring with prometheus](lessons/lesson5/logging-prometheus.md)
   * [Grafana dashboard](lessons/lesson5/grafana.md)
-* [LESSON 6](lessons/lesson-6.md)
+* [LESSON 6](lessons/lesson-6/README.md)
+  * [Secure your cryptographic keys](lessons/lesson-6/secure-crypto-keys.md)
 
 ## STAKE POOL HANDBOOK <a id="stake-pool-guide"></a>
 
