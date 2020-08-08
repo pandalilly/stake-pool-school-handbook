@@ -1,9 +1,14 @@
 # Get configuration files
 
 {% hint style="danger" %}
-In this course we use the **CARDANO TESTNET,** so let's get the configuration files for it.   
-Do not use MAINNET yet. 
+**WARNING**
+
+In this course we use the **CARDANO TESTNET,** so let's get the configuration files for it. 
+
+**DO NOT USE MAINNET DURING THIS COURSE.** _****_
 {% endhint %}
+
+
 
 Starting the node and connecting it to the testnet requires 4 configuration files:
 
