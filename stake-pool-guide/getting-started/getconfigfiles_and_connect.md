@@ -1,5 +1,10 @@
 # Get configuration files
 
+{% hint style="danger" %}
+In this course we use the **CARDANO TESTNET,** so let's get the configuration files for it.   
+Do not use MAINNET yet. 
+{% endhint %}
+
 Starting the node and connecting it to the testnet requires 4 configuration files:
 
 * topology.json
@@ -14,12 +19,6 @@ cd
 mkdir relay
 cd relay
 ```
-
-{% hint style="info" %}
-You can download the TESTNET configuration files from:
-
-[https://hydra.iohk.io/job/Cardano/cardano-node/cardano-deployment/latest-finished/download/1/index.html](https://hydra.iohk.io/job/Cardano/cardano-node/cardano-deployment/latest-finished/download/1/index.html)
-{% endhint %}
 
 Or with the command line using:
 
