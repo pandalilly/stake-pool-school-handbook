@@ -177,7 +177,9 @@ cp -p dist-newstyle/build/x86_64-linux/ghc-8.6.5/cardano-cli-1.18.0/x/cardano-cl
 cardano-cli --version
 ```
 
-If you need to update to a newer version follow the steps below. This will be much faster than the initial build:
+{% hint style="info" %}
+f you need to update to a newer version follow the steps below. This will be much faster than the initial build:
+{% endhint %}
 
 ```text
 cd cardano-node
