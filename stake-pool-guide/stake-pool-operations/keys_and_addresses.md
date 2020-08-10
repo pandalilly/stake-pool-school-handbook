@@ -55,10 +55,10 @@ cat payment.addr
 > 00ec78e3d3916636101f6d9539c451f248ba200f38f2c33129f7ef36d66853603e872296956a4d86
 ```
 
-To query your address \(see the utxo's at that address\), you first need to set environment variable `CARDANO_NODE_SOCKET_PATH` to the socket-path specified in your node configuration. In this example we will use the block-producing node created in the previous steps:
+To query your address \(see the utxo's at that address\), you first need to set environment variable `CARDANO_NODE_SOCKET_PATH` to the socket-path specified in your node configuration. In this example we will use the relay node created in the previous steps:
 
 ```text
-export CARDANO_NODE_SOCKET_PATH=~/cardano-node/relay/db/node.socket
+export CARDANO_NODE_SOCKET_PATH=~/relay/db/node.socket
 ```
 
 make sure that your node is running. Then use `cardano-cli shelley query utxo` to find out the address' balance:
