@@ -30,6 +30,8 @@ To start the node, run the following command from **inside the relay** directory
  --config shelley_testnet-config.json
 ```
 
+The above command will create a `db` directory inside the relay directory
+
 {% hint style="info" %}
 Replace x.x.x.x with your public IP
 {% endhint %}
