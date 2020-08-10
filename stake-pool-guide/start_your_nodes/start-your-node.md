@@ -18,7 +18,7 @@ You can get the complete list of available options with `cardano-node run`
 -h,--help                       Show this help text
 ```
 
-To start the node, run the following command from inside the relay directory:
+To start the node, run the following command from **inside the relay** directory:
 
 ```text
  cardano-node run \
