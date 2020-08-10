@@ -58,7 +58,7 @@ The deposit amount can be found in the `protocol.json` under `keyDeposit`:
 
 ```text
     ...
-    "keyDeposit": 400000,
+    "keyDeposit": 2000000,
     ...
 ```
 
@@ -77,9 +77,9 @@ Query the UTXO:
 So if we had 1000 ada, to calculate the change to send back to `payment.addr` we run:
 
 ```text
-expr 1000000000 - 171485 - 400000
+expr 1000000000 - 171485 - 2000000
 
-> 999428515
+> 997828515
 ```
 
 ## Submit the certificate with a transaction:
@@ -89,7 +89,7 @@ Build the transaction:
 ```text
 cardano-cli shelley transaction build-raw \
 --tx-in b64ae44e1195b04663ab863b62337e626c65b0c9855a9fbb9ef4458f81a6f5ee#1 \
---tx-out $(cat paymentwithstake.addr)+999428515 \
+--tx-out $(cat paymentwithstake.addr)+997828515 \
 --ttl 987654 \
 --fee 171485 \
 --out-file tx.raw \
@@ -122,4 +122,3 @@ QUESTIONS AND FEEDBACK
 
 If you have any questions and suggestions while taking the lessons please feel free to ask in the [forum](https://forum.cardano.org/c/english/operators-talk/119) and we will respond as soon as possible.
 {% endhint %}
-

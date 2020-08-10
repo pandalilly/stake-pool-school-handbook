@@ -54,7 +54,7 @@ The `genesis.json` file looks like the one below.
         "tag": "NeutralNonce"
     },
     "maxBlockHeaderSize": 1100,
-    "keyDeposit": 400000,
+    "keyDeposit": 2000000,
     "nOpt": 250,
     "rho": 0.0022,
     "tau": 0.05,
@@ -365,7 +365,6 @@ It is also possible to have more fine grained control over filtering of trace ou
 {% hint style="info" %}
 QUESTIONS AND FEEDBACK
 
-  
+
 If you have any questions and suggestions while taking the lessons please feel free to ask in the [forum](https://forum.cardano.org/c/english/operators-talk/119) and we will respond as soon as possible.
 {% endhint %}
-
