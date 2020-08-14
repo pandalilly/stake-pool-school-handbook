@@ -10,9 +10,15 @@ description: >-
 We want to continuously improve this course and content. Your feedback is always appreciated.  
 
 {% hint style="info" %}
- QUESTIONS AND FEEDBACK
+ QUESTIONS 
+
+If you have any questions please feel free to ask in the [forum](https://forum.cardano.org/c/english/operators-talk/119) and we will respond as soon as possible.
+{% endhint %}
+
+{% hint style="info" %}
+FEEDBACK
 
   
-If you have any questions and suggestions while taking the lessons please feel free to ask in the [forum](https://forum.cardano.org/c/english/operators-talk/119) and we will respond as soon as possible.
+If you have any suggestions about this HANDBOOK content please raise an issue in [github. ](https://github.com/cardano-foundation/stake-pool-school-handbook/issues)
 {% endhint %}
 
