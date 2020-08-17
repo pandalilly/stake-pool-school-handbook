@@ -22,12 +22,12 @@ To start the node, run the following command from **inside the relay** directory
 
 ```text
  cardano-node run \
- --topology shelley_testnet-topology.json \
+ --topology testnet-topology.json \
  --database-path db \
  --socket-path db/node.socket \
  --host-addr x.x.x.x \
  --port 3001 \
- --config shelley_testnet-config.json
+ --config testnet-config.json
 ```
 
 The above command will create a `db` directory inside the relay directory
