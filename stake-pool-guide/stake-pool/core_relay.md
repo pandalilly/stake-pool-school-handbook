@@ -2,12 +2,8 @@
 
 Before we register our stake pool, let's configure our **block-producing** and **relay** nodes:
 
-**NOTE:** Here you can find peers to connect to, and submit your own relay's data:  
-[https://github.com/input-output-hk/cardano-ops/blob/batch-ff-relays-pr/topologies/ff-peers.nix](https://github.com/input-output-hk/cardano-ops/blob/batch-ff-relays-pr/topologies/ff-peers.nix)
-
-{% hint style="info" %}
-Please note that some of these nodes might have been retired already.
-{% endhint %}
+**NOTE:** Here you can find peers to connect to, and submit your own relay's data:[  
+](https://explorer.cardano-testnet.iohkdev.io/relays/topology.json)[https://explorer.cardano-testnet.iohkdev.io/relays/topology.json](https://explorer.cardano-testnet.iohkdev.io/relays/topology.json)
 
 ## Configure the block-producing node
 
