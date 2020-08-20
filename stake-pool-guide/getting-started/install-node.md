@@ -1,5 +1,7 @@
 # Installing Cardano-node
 
+## Latest version 1.19.0
+
 ## Prerequisites
 
 Set up your platform:
@@ -152,7 +154,7 @@ For reproducible builds, we should check out a specific release, a specific "tag
 ```text
 git fetch --all --tags
 git tag
-git checkout tags/1.18.0
+git checkout tags/1.19.0
 ```
 
 ## Build and install the node
@@ -166,11 +168,11 @@ cabal build all
 Now we can copy the executables files to the .local/bin directory
 
 ```text
-cp -p dist-newstyle/build/x86_64-linux/ghc-8.6.5/cardano-node-1.18.0/x/cardano-node/build/cardano-node/cardano-node ~/.local/bin/
+cp -p dist-newstyle/build/x86_64-linux/ghc-8.6.5/cardano-node-1.19.0/x/cardano-node/build/cardano-node/cardano-node ~/.local/bin/
 ```
 
 ```text
-cp -p dist-newstyle/build/x86_64-linux/ghc-8.6.5/cardano-cli-1.18.0/x/cardano-cli/build/cardano-cli/cardano-cli ~/.local/bin/
+cp -p dist-newstyle/build/x86_64-linux/ghc-8.6.5/cardano-cli-1.19.0/x/cardano-cli/build/cardano-cli/cardano-cli ~/.local/bin/
 ```
 
 ```text
