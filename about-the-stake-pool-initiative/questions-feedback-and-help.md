@@ -19,6 +19,6 @@ If you have any questions please feel free to ask in the [forum](https://forum.c
 FEEDBACK
 
   
-If you have any suggestions about this HANDBOOK content please raise an issue in [github. ](https://github.com/cardano-foundation/stake-pool-school-handbook/issues)
+If you have any suggestions about this HANDBOOK content please raise an issue in [Cardano Forum](https://forum.cardano.org/c/english/operators-talk/119)
 {% endhint %}
 
